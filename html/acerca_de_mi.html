@@ -1,28 +1,33 @@
 
 <html>
   <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portafolio Rupatrupa</title>
+    <link rel="stylesheet" href="../css/estilos.css"/>
   </head>
   <body>
-    <Header><span class="hamburguer_menu"><img src="../imagenes/hamburguer_menu.png" alt=""/></span>
-      <h2 class="header_title">Fragmentos</h2>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portafolio</a></li>
-          <li><a href="#">Posts</a></li>
-          <li><a href="#">Sobre mi</a></li>
-        </ul>
-      </nav>
+    <Header class="header">
+      <div class="header__box"><a class="hamburguer__menu" href="acerca_de_mi.html"><img src="../imagenes/hamburguer_menu.svg" alt=""/></a>
+        <h2 class="header__title">Fragmentos</h2>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Sobre mi</a></li>
+          </ul>
+        </nav>
+      </div>
     </Header>
     <div class="hero">
-      <h1 class="hero_title">Acerca de mi</h1>
-      <h6 class="hero_description">Un poquito de mi vida</h6>
+      <h1 class="hero__title">Acerca de mi</h1>
+      <h6 class="hero__description">Un poquito de mi vida</h6>
     </div>
     <main>
       <section class="profile">
         <h1>Perfil <hr></h1>
-        <div class="profile_aboutme">
+        <div class="profile__aboutme">
           <h2>Acerca de mi</h2>
           <h5>
             Este soy yo... Un joven soñador,curioso por naturaleza , con ganas de mucho y miedo de poco. 
@@ -30,8 +35,8 @@
             seguridad informática y la ciencia en general. Deportista y programador
           </h5>
         </div>
-        <div class="profile_image"><img src="../imagenes/profile.jpg" alt=""/></div>
-        <div class="profile_details">
+        <div class="profile__image"><img src="../imagenes/profile.jpg" alt=""/></div>
+        <div class="profile__details">
           <h2>Detalles</h2>
           <h4><strong>Nombre:</strong></h4>
           <h4>Santiago Restrepo Idárraga</h4>
@@ -43,19 +48,19 @@
       </section>
       <section class="experience">
         <h1>Experiencia <hr></h1>
-        <div class="experience_education">
+        <div class="experience__education">
           <h2>Educación</h2>
-          <div class="experience_box"> 
+          <div class="experience__box"> 
             <h2>Liceo Salazar Y Herrera</h2><small>2009 - 2018</small>
             <h3>Educación primaria y secundaria</h3>
             <p>Mis estudios en este colegio comenzaron en 4° grado y se extendieron hasta 11° grado, lapso donde adquirí muy buenas bases generales para desenvolverme luego con eficacia y disciplina en mis estudios universitarios</p>
           </div>
-          <div class="experience_box"> 
+          <div class="experience__box"> 
             <h2>Politécnico Colombiano Jaime Isaza Cadavid</h2><small>2019 - ?</small>
             <h3>Educación superior - Universidad</h3>
             <p>Actualmente me encuentro cursando el 4to semestre de Ingeniería informática. A día de hoy he obtenido excelentes conocimientos fundamentales en cuanto a ingeniería, ciencias básicas y programación</p>
           </div>
-          <div class="experience_box"> 
+          <div class="experience__box"> 
             <h2>Platzi</h2><small>2020 - ?</small>
             <h3>Educación online y complementaria</h3>
             <p>Platzi ha sido y será mi mayor fuente de conocimientos en relación con el mundo de la tecnología, la ciencia, el desarrollo profesional y el desarrollo personal. En esta plataforma afianzo mis estudios universitarios y logro poco a poco una experticia en cada una de mis pasiones</p>
@@ -65,24 +70,24 @@
           <h2>laboral</h2>
           <h2>Vacia</h2>
         </div>
-        <div class="experience_extra">
+        <div class="experience__extra">
           <h2>Extra</h2>
-          <div class="experience_box"> 
+          <div class="experience__box"> 
             <h2>Guitarra</h2><small>2018 - ∞</small>
             <h3>Nivel intermedio</h3>
             <p>2 años de experiencia me han dado técnicas y conocimientos tanto prácticos como teóricos de la música en general por medio de la guitarra, considerando que me han llevado a un nivel intermedio del manejo de este maravilloso instrumento</p>
           </div>
-          <div class="experience_box"> 
+          <div class="experience__box"> 
             <h2>Técnica vocal</h2><small>2020 - ∞</small>
             <h3>Principiante</h3>
             <p>Este año he comenzado en el camino de la técnica vocal, en 6 meses he percibido una notable mejoría a comparación de tiempo atrás cuando ni yo disfrutaba de oírme cantar</p>
           </div>
-          <div class="experience_box"> 
+          <div class="experience__box"> 
             <h2>Programación</h2><small>2019 - ∞</small>
             <h3>Nivel intermedio</h3>
             <p>La conocí en mi primer semestre de universidad. Desde ese momento la experiencia y el esfuerzo han sentado unas increíbles bases lógicas con las cuales he tenido la oportunidad de realizar proyectos en los que he dejado plasmado esos valiosos conocimientos</p>
           </div>
-          <div class="experience_box"> 
+          <div class="experience__box"> 
             <h2>Física</h2><small>2017 - ∞</small>
             <h3>Estudiante eterno</h3>
             <p>Las materias de ciencias básicas universitarias, unos pocos pero importantes conocimientos del colegio, mi constante curiosear y mi amor por la ciencia me han permitido forjar unas muy buenas bases en cuanto a física teórica y práctica</p>
@@ -127,7 +132,7 @@
           </div>
         </div>
         <h2>Idiomas</h2>
-        <div class="abilities_language">
+        <div class="abilities__language">
           <div class="ability">
             <h5>Español(Lengua matena)</h5>
             <progress max="100" value="88"></progress>

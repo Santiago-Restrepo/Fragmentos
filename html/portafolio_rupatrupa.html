@@ -1,30 +1,35 @@
 
 <html>
   <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portafolio Rupatrupa</title>
+    <link rel="stylesheet" href="../css/estilos.css"/>
   </head>
   <body>
-    <Header><span class="hamburguer_menu"><img src="../imagenes/hamburguer_menu.png" alt=""/></span>
-      <h2 class="header_title">Fragmentos</h2>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portafolio</a></li>
-          <li><a href="#">Posts</a></li>
-          <li><a href="#">Sobre mi</a></li>
-        </ul>
-      </nav>
+    <Header class="header">
+      <div class="header__box"><a class="hamburguer__menu" href="acerca_de_mi.html"><img src="../imagenes/hamburguer_menu.svg" alt=""/></a>
+        <h2 class="header__title">Fragmentos</h2>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Sobre mi</a></li>
+          </ul>
+        </nav>
+      </div>
     </Header>
     <div class="hero">
-      <h1 class="hero_title">Fragmentos</h1>
-      <h6 class="hero_description">El diario de mi evolución</h6>
+      <h1 class="hero__title">Fragmentos</h1>
+      <h6 class="hero__description">El diario de mi evolución</h6>
     </div>
-    <main class="Project_content">
-      <div class="project_title">
+    <main class="Project__content">
+      <div class="project__title">
         <h2>Portafolio Rupatrupa</h2>
       </div>
-      <div class="project_image"><img src="../imagenes/rupatrupa.jpg" alt=""/></div>
-      <div class="project_subtitle">
+      <div class="project__image"><img src="../imagenes/rupatrupa.jpg" alt=""/></div>
+      <div class="project__subtitle">
         <h3>¿Qué es Rupatrupa?</h3>
       </div>
       <p>
@@ -47,10 +52,10 @@
         desarrollo Frontend y me confronté a uno de mis primeros desafíos contra el proceso creativo, 
         muy temido en su momento (En realdad todavía le temo).
       </p>
-      <div class="project_subtitle">
+      <div class="project__subtitle">
         <h3>¿De qué se trató este proyecto?</h3>
       </div>
-      <div class="project_image"><img src="../imagenes/portafolio_rupatrupa.png" alt=""/></div>
+      <div class="project__image"><img src="../imagenes/portafolio_rupatrupa.png" alt=""/></div>
       <p>
         Consistía en realizar un portafolio de proyectos en base a uno realizado por el gran
         profesor Leonidas Esteban. En ese entonces no
@@ -76,27 +81,27 @@
         proyecto una página con la capacidad de adaptabilidad a todo tipo de dispositivos.
       </p>
     </main>
-    <section class="project_links">
-      <div class="project_linksTitle">
+    <section class="project__links">
+      <div class="project__linksTitle">
         <h3>Enlaces directos</h3>
       </div>
-      <div class="project_link">
-        <h5>Proyecto en GitHub:</h5><span class="project_iconLink"><img src="../imagenes/github.png" alt=""/></span>
+      <div class="project__link">
+        <h5>Proyecto en GitHub:</h5><span class="project__iconLink"><img src="../imagenes/github.png" alt=""/></span>
       </div>
-      <div class="project_link">
-        <h5>Página Web:</h5><span class="project_iconLink"><img src="../imagenes/www.svg" alt=""/></span>
+      <div class="project__link">
+        <h5>Página Web:</h5><span class="project__iconLink"><img src="../imagenes/www.svg" alt=""/></span>
       </div>
     </section>
     <section class="moreProjects">
       <div class="anotherProject"><img src="../imagenes/simon.png" alt=""/>
-        <div class="anotherProject_title">
+        <div class="anotherProject__title">
           <h5>Simón Dice Game</h5>
-        </div><a class="project_button" href="#">ver más</a>
+        </div><a class="project__button" href="#">ver más</a>
       </div>
       <div class="anotherProject"><img src="../imagenes/PolimathosBLANCO.png" alt=""/>
-        <div class="anotherProject_title">
+        <div class="anotherProject__title">
           <h5>Red social Polimathos</h5>
-        </div><a class="project_button" href="#">ver más</a>
+        </div><a class="project__button" href="#">ver más</a>
       </div>
     </section>
     <footer>

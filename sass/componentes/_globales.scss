@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+$Fuente1: 'Lato', sans-serif;
+$Fuente2: 'Rubik', sans-serif;
+$Color-primario: #1E454E;
+$Color-claro: #8F8F8F;
+$Color-secundario: #37293B;
+$Color-oscuro: #000E3B;
+$Color-variacion: #FF3644;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $Fuente1;
+}
+
+p{
+    font-family: $Fuente2;
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 3.5em;
+}
+
+h6{
+    font-size: 1.6em;
+}

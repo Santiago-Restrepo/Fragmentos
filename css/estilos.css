@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+h6 {
+  font-size: 1.6em;
+}
+
+/*
+Posicionamiento (position, top, right, bottom, left, z-index)
+Composición (float, clear, display, box-sizing, visibility, overflow, clip)
+Modelo de caja (width, height, margin, padding)
+Contenidos especiales (list, table, quotes, content, counter)
+Tipografía y texto (font, text-align, text-transform)
+Color y apariencia (outline, color, background, border)
+Efectos visuales (box-shadow, text-shadow, transform, transition)
+Miscelánea (opacity, cursor, filters)
+Impresión (page-break, orphans, widows)
+*/
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding: 2em 0;
+  background-color: #1E454E;
+}
+.header__box {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding-bottom: 2em;
+  margin: 0.1em 2em;
+  border-bottom: 2px solid #8F8F8F;
+}
+.header__box h2 {
+  font-style: italic;
+  font-weight: 600;
+  color: white;
+}
+.header__box .hamburguer__menu {
+  width: 25%;
+}
+.header__box .hamburguer__menu img {
+  position: fixed;
+  top: 10;
+  left: 10;
+  z-index: 1;
+  width: 5.5em;
+}
+.header__box ul {
+  display: none;
+}
+
+/*
+Posicionamiento (position, top, right, bottom, left, z-index)
+Composición (float, display, clear, display, box-sizing, visibility, overflow, clip)
+Modelo de caja (width, height, margin, padding)
+Contenidos especiales (list, table, quotes, content, counter)
+Tipografía y texto (font, text-align, text-transform)
+Color y apariencia (outline, color, background, border)
+Efectos visuales (box-shadow, text-shadow, transform, transition)
+Miscelánea (opacity, cursor, filters)
+Impresión (page-break, orphans, widows)
+*/
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 65vh;
+  padding-top: 15em;
+  color: white;
+  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
+}
+.hero__title {
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+.hero__description {
+  color: #8F8F8F;
+  font-weight: 700;
+}

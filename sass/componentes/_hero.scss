@@ -1,0 +1,31 @@
+/*
+Posicionamiento (position, top, right, bottom, left, z-index)
+Composición (float, display, clear, display, box-sizing, visibility, overflow, clip)
+Modelo de caja (width, height, margin, padding)
+Contenidos especiales (list, table, quotes, content, counter)
+Tipografía y texto (font, text-align, text-transform)
+Color y apariencia (outline, color, background, border)
+Efectos visuales (box-shadow, text-shadow, transform, transition)
+Miscelánea (opacity, cursor, filters)
+Impresión (page-break, orphans, widows)
+*/
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 65vh;
+    padding-top: 15em;
+    color: white;
+    background: linear-gradient(0deg, rgba(6,14,16,1) 0%, rgba(6,14,16,1) 15%, rgba(30,69,78,1) 100%);
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: .2em;
+    }
+    &__description{
+        color: $Color-claro;
+        font-weight: 700;
+    }
+}
