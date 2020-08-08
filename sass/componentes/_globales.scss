@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 $Fuente1: 'Lato', sans-serif;
 $Fuente2: 'Rubik', sans-serif;
 $Color-primario: #1E454E;
-$Color-claro: #8F8F8F;
+$Color-primario-oscuro: #03181D;
+$Color-claro: #c4c4c4;
 $Color-secundario: #37293B;
 $Color-oscuro: #000E3B;
 $Color-variacion: #FF3644;
@@ -18,11 +19,11 @@ html{
     position: relative;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3{
     font-family: $Fuente1;
 }
 
-p{
+h4,h5,h6,p,a{
     font-family: $Fuente2;
     font-size: 1.5em;
 }
@@ -32,15 +33,23 @@ h1{
 }
 
 h2{
-    font-size: 2.5em;
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.8em;
 }
 
 h4{
     font-size: 1.6em;
 }
 
+h5{
+    font-size: 1.4em;    
+}
+
 h6{
-    font-size: 1.6em;
+    font-size: 1.2em;
 }
 
 img{
