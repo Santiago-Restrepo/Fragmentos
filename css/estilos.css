@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: "Rubik", sans-serif;
+  font-size: 1.5em;
 }
 
 h1 {
@@ -24,11 +25,19 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.6em;
 }
 
 h6 {
   font-size: 1.6em;
+}
+
+img {
+  width: 100px;
 }
 
 /*
@@ -59,7 +68,8 @@ Impresión (page-break, orphans, widows)
 }
 .header__box h2 {
   font-style: italic;
-  font-weight: 600;
+  font-size: 3.5em;
+  font-weight: 300;
   color: white;
 }
 .header__box .hamburguer__menu {
@@ -67,13 +77,34 @@ Impresión (page-break, orphans, widows)
 }
 .header__box .hamburguer__menu img {
   position: fixed;
-  top: 10;
-  left: 10;
+  top: 5;
+  left: 5;
   z-index: 1;
-  width: 5.5em;
+  width: 4.5em;
 }
 .header__box ul {
   display: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 65vh;
+  padding-top: 15em;
+  color: white;
+  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
+}
+.hero__title {
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+}
+.hero__description {
+  color: white;
+  font-weight: 300;
+  font-style: italic;
 }
 
 /*
@@ -87,22 +118,66 @@ Efectos visuales (box-shadow, text-shadow, transform, transition)
 Miscelánea (opacity, cursor, filters)
 Impresión (page-break, orphans, widows)
 */
-.hero {
+.whoIAm {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 0;
   width: 100vw;
-  height: 65vh;
-  padding-top: 15em;
-  color: white;
-  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #37293B;
 }
-.hero__title {
-  font-style: normal;
-  font-weight: 700;
-  margin-bottom: 0.2em;
+.whoIAm__container {
+  width: 70%;
 }
-.hero__description {
-  color: #8F8F8F;
-  font-weight: 700;
+.whoIAm__container-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 4em;
+  padding-bottom: 1em;
+  font-weight: bolder;
+  border-bottom: 0.15em solid #1E454E;
+}
+.whoIAm__container-image {
+  width: 100%;
+  margin: 0 auto;
+}
+.whoIAm__container-image img {
+  width: 100%;
+  border-top-right-radius: 10em;
+  border-bottom-left-radius: 10em;
+}
+.whoIAm__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4em auto 0;
+  width: 70%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+.whoIAm__description-quote {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2em;
+}
+.whoIAm__description-quote img {
+  width: 3em;
+}
+.whoIAm__description h6 {
+  display: flex;
+  flex-direction: column;
+}
+.whoIAm__description h6 hr {
+  align-self: flex-end;
+  margin-top: 1em;
+  width: 50%;
+  border: 1px solid #1E454E;
 }
