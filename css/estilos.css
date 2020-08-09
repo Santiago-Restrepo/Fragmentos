@@ -44,10 +44,6 @@ h6 {
   font-size: 1.2em;
 }
 
-img {
-  width: 100px;
-}
-
 /*
 Posicionamiento (position, top, right, bottom, left, z-index)
 Composición (float, clear, display, box-sizing, visibility, overflow, clip)
@@ -217,6 +213,8 @@ Impresión (page-break, orphans, widows)
 }
 .focuseye .recentProjects {
   width: 80vw;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 3em;
 }
 .focuseye .recentProjects__title {
   display: flex;
@@ -284,4 +282,55 @@ Impresión (page-break, orphans, widows)
 }
 .focuseye .recentProjects .recentProject:nth-of-type(3) .recentProject__image {
   background-image: url(../imagenes/simon.PNG);
+}
+.focuseye .recentPosts {
+  width: 70vw;
+}
+.focuseye .recentPosts__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  color: white;
+  margin-bottom: 2em;
+}
+.focuseye .recentPosts__title hr {
+  margin-top: 0.4em;
+  width: 30%;
+  border: 1px solid #FF3644;
+}
+.focuseye .recentPosts .recentPost {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  box-sizing: border-box;
+  padding: 1em 1em 0.5em;
+  width: 100%;
+  height: 20em;
+  border-radius: 0.5em;
+  color: #8F8F8F;
+  text-decoration: none;
+  background-color: white;
+}
+.focuseye .recentPosts .recentPost__image {
+  margin-bottom: 1.5em;
+  width: 100%;
+  height: 60%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.focuseye .recentPosts .recentPost__title {
+  align-self: center;
+  font-weight: 400;
+}
+.focuseye .recentPosts .recentPost__date {
+  position: absolute;
+  right: 15;
+  bottom: 7.5;
+  font-size: 0.7em;
+}
+.focuseye .recentPost:nth-of-type(1) .recentPost__image {
+  background-image: url(../../imagenes/question.jpg);
 }

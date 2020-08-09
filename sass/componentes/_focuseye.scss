@@ -27,6 +27,8 @@ Impresión (page-break, orphans, widows)
     background: linear-gradient(180deg, rgba(55,41,59,1) 50%, rgba(0,14,59,1) 100%);
     .recentProjects{
         width: 80vw;
+        border-bottom: 1px solid $Color-claro;
+        margin-bottom: 3em;
         &__title{
             display: flex;
             flex-direction: column;
@@ -91,5 +93,56 @@ Impresión (page-break, orphans, widows)
         .recentProject:nth-of-type(3) .recentProject__image{
             background-image: url(../imagenes/simon.PNG);
         }
+    }
+    .recentPosts{
+        width: 70vw;
+        &__title{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: start;
+            color: white;
+            margin-bottom: 2em;
+            hr{
+                @include titleHr(.4em,30%,$Color-variacion);
+            }
+        }
+        .recentPost{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-items: flex-end;
+            box-sizing: border-box;
+            padding: 1em 1em .5em;
+            width: 100%;
+            height: 20em;
+            border-radius: .5em;
+            color: #8F8F8F;
+            text-decoration: none;
+            background-color: white;
+            &__image{
+                margin-bottom: 1.5em;
+                width: 100%;
+                height: 60%;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: cover;
+            }
+            &__title{
+               align-self: center;
+               font-weight: 400;
+            } 
+            &__date{
+                position: absolute;
+                right: 15;
+                bottom: 7.5;
+                font-size: .7em;
+            }
+            
+        }
+
+    }
+    .recentPost:nth-of-type(1) .recentPost__image{
+        background-image: url(../../imagenes/question.jpg);
     }
 }
