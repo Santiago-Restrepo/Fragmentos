@@ -12,18 +12,20 @@ $Color-variacion: #FF3644;
 *{
     margin: 0;
     padding: 0;
+    outline: none;
 }
 
 html{
     font-size: 62.5%;
     position: relative;
+    width: 100vw;
 }
 
 h1,h2,h3{
     font-family: $Fuente1;
 }
 
-h4,h5,h6,p,a,span{
+h4,h5,h6,p,a,span,button{
     font-family: $Fuente2;
 }
 

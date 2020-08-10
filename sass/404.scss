@@ -1,0 +1,46 @@
+@import "componentes/globales";
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(6,14,16,1) 0%, rgba(6,14,16,1) 15%, rgba(30,69,78,1) 100%);
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: white;
+        h2{
+            margin-bottom: 3em;
+            font-style: italic;
+            font-weight: 600;
+            color: $Color-claro;
+        }
+        h1{
+            margin-bottom: .3em;
+        }
+        h6{
+            margin-bottom: 6em;
+            font-weight: 400;
+            color: $Color-claro;
+
+        }
+        a{
+           display: flex; 
+           align-items: center;
+           justify-content: center;
+           width: 40%;
+           height: 12%;
+           text-decoration: none;
+           font-size: 1.7em;
+           font-weight: bold;
+           background-color: #FFDE5F;
+           color: $Color-primario-oscuro;
+           border-radius: 1em;
+
+        }
+    }
+}

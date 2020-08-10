@@ -4,18 +4,20 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 html {
   font-size: 62.5%;
   position: relative;
+  width: 100vw;
 }
 
 h1, h2, h3 {
   font-family: "Lato", sans-serif;
 }
 
-h4, h5, h6, p, a, span {
+h4, h5, h6, p, a, span, button {
   font-family: "Rubik", sans-serif;
 }
 
@@ -418,18 +420,34 @@ footer h6 {
   font-weight: lighter;
   margin-bottom: 2.5em;
 }
-footer input {
+footer form {
+  display: flex;
+  position: relative;
+  width: 90%;
+  margin-bottom: 3em;
+}
+footer form input {
   padding: auto 0;
   padding-left: 1em;
-  width: 90%;
+  width: 100%;
   height: 3em;
   border-radius: 2em;
   border: none;
-  margin-bottom: 3em;
 }
-footer input::placeholder {
+footer form input::placeholder {
   font-family: "Rubik", sans-serif;
   font-size: 1.1em;
+}
+footer form button {
+  position: absolute;
+  bottom: -15;
+  right: 0;
+  width: 30%;
+  height: 70%;
+  color: white;
+  border: none;
+  border-radius: 1em;
+  background-color: #03181D;
 }
 footer .socialMedia {
   display: flex;
@@ -437,8 +455,8 @@ footer .socialMedia {
   width: 80%;
   margin-bottom: 10em;
 }
-footer .socialMedia span img {
-  width: 4em;
+footer .socialMedia span a img {
+  width: 2.8em;
 }
 footer .yolas {
   font-size: 1.1em;
