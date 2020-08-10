@@ -23,10 +23,14 @@ h1,h2,h3{
     font-family: $Fuente1;
 }
 
-h4,h5,h6,p,a{
+h4,h5,h6,p,a,span{
     font-family: $Fuente2;
+}
+
+p,a{
     font-size: 1.5em;
 }
+
 
 h1{
     font-size: 4em;

@@ -1,0 +1,46 @@
+/*
+Posicionamiento (position, top, right, bottom, left, z-index)
+Composición (float, display, clear, display, box-sizing, visibility, overflow, clip)
+Modelo de caja (width, height, margin, padding)
+Contenidos especiales (list, table, quotes, content, counter)
+Tipografía y texto (font, text-align, text-transform)
+Color y apariencia (outline, color, background, border)
+Efectos visuales (box-shadow, text-shadow, transform, transition)
+Miscelánea (opacity, cursor, filters)
+Impresión (page-break, orphans, widows)
+*/
+
+.weeklyMessage{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 3em 0;
+    &__box{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        width: 80%;
+        height: 70%;
+        text-align: center;
+        background-color: #FFDE5F;
+        color: $Color-oscuro;
+        box-shadow:6px 6px #d3b53f;
+        &-quote{
+            width: fit-content;
+            margin-bottom: 2em;
+            img{
+                width: 3.5em;
+            }
+        }
+        &-autor{
+            margin-top: 2em ;
+            font-size: 1.2em;
+        }
+    }
+}
