@@ -1,0 +1,338 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  position: relative;
+  width: 100vw;
+}
+
+h1, h2, h3 {
+  font-family: "Lato", sans-serif;
+}
+
+h4, h5, h6, p, a, span, button {
+  font-family: "Rubik", sans-serif;
+}
+
+p, a {
+  font-size: 1.6em;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
+/*
+Posicionamiento (position, top, right, bottom, left, z-index)
+Composición (float, clear, display, box-sizing, visibility, overflow, clip)
+Modelo de caja (width, height, margin, padding)
+Contenidos especiales (list, table, quotes, content, counter)
+Tipografía y texto (font, text-align, text-transform)
+Color y apariencia (outline, color, background, border)
+Efectos visuales (box-shadow, text-shadow, transform, transition)
+Miscelánea (opacity, cursor, filters)
+Impresión (page-break, orphans, widows)
+*/
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding: 2em 0;
+  background-color: #1E454E;
+}
+.header__box {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding-bottom: 2em;
+  margin: 0.1em 2em;
+  border-bottom: 2px solid #c4c4c4;
+}
+.header__box h2 {
+  font-style: italic;
+  font-size: 3.5em;
+  font-weight: 300;
+  color: white;
+}
+.header__box .hamburguer__menu {
+  width: 25%;
+}
+.header__box .hamburguer__menu img {
+  position: fixed;
+  top: 5;
+  left: 5;
+  z-index: 1;
+  width: 2.8em;
+}
+.header__box ul {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 65vh;
+  padding-top: 15em;
+  color: white;
+  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
+}
+.hero__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+}
+.hero__description {
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/*
+Posicionamiento (position, top, right, bottom, left, z-index)
+Composición (float, display, clear, display, box-sizing, visibility, overflow, clip)
+Modelo de caja (width, height, margin, padding)
+Contenidos especiales (list, table, quotes, content, counter)
+Tipografía y texto (font, text-align, text-transform)
+Color y apariencia (outline, color, background, border)
+Efectos visuales (box-shadow, text-shadow, transform, transition)
+Miscelánea (opacity, cursor, filters)
+Impresión (page-break, orphans, widows)
+*/
+footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3em;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
+  color: white;
+}
+footer h2 {
+  width: 65%;
+  margin-bottom: 1em;
+}
+footer h6 {
+  font-weight: lighter;
+  margin-bottom: 2.5em;
+}
+footer form {
+  display: flex;
+  position: relative;
+  width: 90%;
+  margin-bottom: 3em;
+}
+footer form input {
+  padding: auto 0;
+  padding-left: 1em;
+  width: 100%;
+  height: 3em;
+  border-radius: 2em;
+  border: none;
+}
+footer form input::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1em;
+}
+footer form button {
+  position: absolute;
+  bottom: -15;
+  right: 0;
+  width: 30%;
+  height: 70%;
+  color: white;
+  border: none;
+  border-radius: 1em;
+  background-color: #03181D;
+}
+footer .socialMedia {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 10em;
+}
+footer .socialMedia span a img {
+  width: 2.8em;
+}
+footer .yolas {
+  font-size: 1.1em;
+}
+
+img {
+  width: 30%;
+}
+
+.project, .moreProjects, .projectlinks {
+  box-sizing: border-box;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.project__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5em;
+}
+.project__title hr {
+  margin-top: 0.4em;
+  width: 45%;
+  border: 1px solid #FF3644;
+}
+.project__image {
+  margin-bottom: 2.5em;
+  width: 100%;
+}
+.project__image img {
+  width: 100%;
+}
+.project__subtitle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.project__subtitle hr {
+  margin-top: 0.4em;
+  width: 3%;
+  height: 2em;
+  border: none;
+  border-right: 2px solid #FF3644;
+}
+.project p, .moreProjects p, .projectlinks p {
+  font-weight: 200;
+  line-height: 1.5em;
+  color: #535353;
+}
+
+.projectlinks {
+  align-items: flex-end;
+}
+.projectlinks__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 1.5em;
+}
+.projectlinks__title hr {
+  margin-top: 0.4em;
+  width: 85%;
+  border: 1px solid #FF3644;
+}
+.projectlinks__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 2em;
+  width: 80%;
+}
+.projectlinks__link h4 {
+  text-align: end;
+  font-weight: 400;
+}
+.projectlinks__link-icon {
+  margin-left: 3em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.projectlinks__link-icon a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.projectlinks__link-icon a img {
+  width: 2.5em;
+}
+
+.moreProjects {
+  padding: 3em;
+}
+.moreProjects__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.5em;
+}
+.moreProjects__title hr {
+  margin-top: 0.4em;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+}
+.moreProjects .anotherProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2em;
+  width: 100%;
+  height: 35em;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 1em 1em 7em 7em;
+  border-bottom-right-radius: 7em;
+  box-shadow: #888888 0px 5px 10px 0px;
+}
+.moreProjects .anotherProject__image {
+  width: 100%;
+  height: 55%;
+  background-color: yellow;
+  border-radius: 1em 1em 0 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.moreProjects .anotherProject__title {
+  color: #000E3B;
+}
+.moreProjects .anotherProject__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 3.5em;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+  border-radius: 2em;
+  background-color: #05242c;
+}
+.moreProjects .anotherProject:nth-of-type(1) .anotherProject__image {
+  background-image: url(../imagenes/PolimathosBLANCO.png);
+}
