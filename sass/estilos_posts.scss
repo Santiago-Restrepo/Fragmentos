@@ -1,0 +1,46 @@
+/*
+Posicionamiento (position, top, right, bottom, left, z-index)
+Composición (float, display, clear, display, box-sizing, visibility, overflow, clip)
+Modelo de caja (width, height, margin, padding)
+Contenidos especiales (list, table, quotes, content, counter)
+Tipografía y texto (font, text-align, text-transform)
+Color y apariencia (outline, color, background, border)
+Efectos visuales (box-shadow, text-shadow, transform, transition)
+Miscelánea (opacity, cursor, filters)
+Impresión (page-break, orphans, widows)
+*/
+
+
+@import "componentes/globales";
+@import "componentes/header";
+@import "componentes/hero";
+@import "componentes/footer";
+
+img{
+width: 300px;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    width: 100vw;
+    height: 7em;
+    background-color: #060e10;
+    input{
+        padding-left: 4em;
+        width: 70%;
+        height: 50%;
+        font-size: 1.1em;
+        color: $Color-claro;
+        background-color: $Color-primario-oscuro;
+        background-image: url(../imagenes/search.svg);
+        background-repeat: no-repeat;
+        background-position: 5% 50%;
+        border: none;
+        border-radius: 2em;
+        outline: none;
+    }
+
+}
