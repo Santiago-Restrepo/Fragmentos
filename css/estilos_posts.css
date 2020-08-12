@@ -28,7 +28,7 @@ h1, h2, h3 {
   font-family: "Lato", sans-serif;
 }
 
-h4, h5, h6, p, a, span, button, input {
+h4, h5, h6, p, a, span, button, input, small {
   font-family: "Rubik", sans-serif;
 }
 
@@ -202,10 +202,6 @@ footer .yolas {
   font-size: 1.1em;
 }
 
-img {
-  width: 300px;
-}
-
 .searchBar {
   display: flex;
   justify-content: center;
@@ -217,9 +213,9 @@ img {
 }
 .searchBar input {
   padding-left: 4em;
-  width: 70%;
+  width: 80%;
   height: 50%;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #c4c4c4;
   background-color: #03181D;
   background-image: url(../imagenes/search.svg);
@@ -228,4 +224,68 @@ img {
   border: none;
   border-radius: 2em;
   outline: none;
+}
+
+.posts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4em;
+  width: 100vw;
+}
+.posts__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.posts__title hr {
+  margin-top: 0.4em;
+  width: 100%;
+  border: 1px solid #37293B;
+}
+.posts .post {
+  box-sizing: border-box;
+  width: 75%;
+  height: 25em;
+  font-size: 10px;
+  text-decoration: none;
+  color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.posts .post__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1.5em 1.5em 2.5em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.posts .post__content__date {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1em;
+}
+.posts .post__content__title {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #dadada;
+}
+.posts .post__content__title hr {
+  margin-top: 0.4em;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+}
+.posts .post:nth-of-type(1) {
+  background-image: url(../imagenes/question.jpg);
 }

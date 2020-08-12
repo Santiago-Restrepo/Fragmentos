@@ -28,7 +28,7 @@ h1, h2, h3 {
   font-family: "Lato", sans-serif;
 }
 
-h4, h5, h6, p, a, span, button, input {
+h4, h5, h6, p, a, span, button, input, small {
   font-family: "Rubik", sans-serif;
 }
 
@@ -213,9 +213,9 @@ footer .yolas {
 }
 .searchBar input {
   padding-left: 4em;
-  width: 70%;
+  width: 80%;
   height: 50%;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #c4c4c4;
   background-color: #03181D;
   background-image: url(../imagenes/search.svg);

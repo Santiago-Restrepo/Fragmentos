@@ -16,8 +16,10 @@ Impresión (page-break, orphans, widows)
 @import "componentes/hero";
 @import "componentes/footer";
 
-img{
-width: 300px;
+@mixin titleHr($margin-top,$width,$border-color) {
+    margin-top: $margin-top;
+    width: $width;
+    border: 1px solid $border-color;
 }
 
 .searchBar{
@@ -30,9 +32,9 @@ width: 300px;
     background-color: #060e10;
     input{
         padding-left: 4em;
-        width: 70%;
+        width: 80%;
         height: 50%;
-        font-size: 1.1em;
+        font-size: 1.2em;
         color: $Color-claro;
         background-color: $Color-primario-oscuro;
         background-image: url(../imagenes/search.svg);
@@ -43,4 +45,62 @@ width: 300px;
         outline: none;
     }
 
+}
+
+.posts{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4em;
+    width: 100vw;
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2em;
+        hr{
+            @include titleHr(.4em,100%,$Color-secundario);  
+        }
+    }
+    .post{
+        box-sizing: border-box;
+        width: 75%;
+        height: 25em;
+        font-size: 10px;
+        text-decoration: none;
+        color: $Color-claro;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;        
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 1.5em 1.5em 2.5em;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            &__date{
+                width: fit-content;
+                font-size: 1em;
+            }
+            &__title{
+                width: 70%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: rgb(218, 218, 218);
+                hr{
+                    @include titleHr(.4em,100%,$Color-claro);  
+                }
+            }
+        }
+    }
+    .post:nth-of-type(1){
+        background-image: url(../imagenes/question.jpg);
+    }
 }
