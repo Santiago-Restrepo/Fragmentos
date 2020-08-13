@@ -1,15 +1,4 @@
 @charset "UTF-8";
-/*
-Posicionamiento (position, top, right, bottom, left, z-index)
-Composición (float, display, clear, display, box-sizing, visibility, overflow, clip)
-Modelo de caja (width, height, margin, padding)
-Contenidos especiales (list, table, quotes, content, counter)
-Tipografía y texto (font, text-align, text-transform)
-Color y apariencia (outline, color, background, border)
-Efectos visuales (box-shadow, text-shadow, transform, transition)
-Miscelánea (opacity, cursor, filters)
-Impresión (page-break, orphans, widows)
-*/
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
@@ -215,152 +204,219 @@ footer .yolas {
   font-size: 1.1em;
 }
 
-.searchBar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3em;
-  width: 100vw;
-  height: 7em;
-  background-color: #060e10;
-}
-.searchBar input {
-  padding-left: 4em;
-  width: 80%;
-  height: 50%;
-  font-size: 1.2em;
-  color: #c4c4c4;
-  background-color: #03181D;
-  background-image: url(../imagenes/search.svg);
-  background-repeat: no-repeat;
-  background-position: 5% 50%;
-  border: none;
-  border-radius: 2em;
-  outline: none;
+img {
+  width: 100px;
 }
 
-.portfolio {
+.mobile_structure, main .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+main {
   width: 100vw;
 }
-.portfolio__title {
+main .profile {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3em;
+}
+main .profile__title, main .abilities__title, main .experience__title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 1em;
+  width: 100%;
+  font-weight: 300;
+  color: #337281;
+}
+main .profile__title hr, main .abilities__title hr, main .experience__title hr {
+  margin-top: 0.4em;
+  width: 100%;
+  border: 1px solid #c4c4c4;
+}
+main .profile__aboutme {
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+main .profile__aboutme__title, main .abilities__subtitle, main .experience__extra__title, main .experience__work__title, main .experience__education__title, main .profile__details__title {
+  margin-bottom: 1.1em;
+  font-weight: 600;
+  color: #337281;
+}
+main .profile__aboutme__description {
+  font-weight: 400;
+  color: #89878A;
+}
+main .profile__image {
+  width: 80%;
   margin-bottom: 2em;
 }
-.portfolio__title hr {
-  margin-top: 0.4em;
+main .profile__image img {
   width: 100%;
-  border: 1px solid #37293B;
+  border-radius: 10em;
 }
-.portfolio__project {
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 2em;
-  margin-bottom: 3em;
-  width: 75%;
-  height: 35em;
+main .profile__details {
+  width: 85%;
+}
+main .profile__details__title {
   text-align: center;
-  background-color: #ECECEC;
-  box-shadow: #888888 0px 5px 10px 0px;
 }
-.portfolio__project__title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.5em;
+main .profile__details__subtitle {
+  margin-bottom: 1em;
+  font-weight: lighter;
+  color: #585858;
 }
-.portfolio__project__title hr {
-  margin-top: 0.4em;
-  width: 80%;
-  border: 1px solid #000e3b8c;
+main .profile__details__subtitle2 {
+  margin-bottom: 1em;
+  font-weight: 100;
+  color: #89878A;
 }
-.portfolio__project__content {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 80%;
-}
-.portfolio__project__content__image {
-  width: 100%;
-  height: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 0.5s;
-}
-.portfolio__project__content__details {
+main .experience {
   box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 2em;
-  width: 70%;
-  height: 100%;
-  background: #F8F8F8;
-  transition: 0.5s;
-  transform-origin: left;
-  transform: perspective(2000px) rotateY(-90deg);
-}
-.portfolio__project__content__details-description {
-  display: flex;
-  align-items: center;
-  width: 90%;
-  height: 65%;
-}
-.portfolio__project__content__details-description h4 {
-  color: #37293B;
-  font-weight: normal;
-}
-.portfolio__project__content__details-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 4em;
-  text-decoration: none;
-  font-weight: 500;
-  color: white;
-  background-color: #37293B;
+  padding: 3em;
+  background-color: #141A17;
 }
-.portfolio__project__content:hover .portfolio__project__content__image {
-  opacity: 0.7;
-  transform: translateX(30%);
+main .experience__work {
+  width: 100%;
+  margin-bottom: 2.5em;
 }
-.portfolio__project__content:hover .portfolio__project__content__details {
-  transform: perspective(200px) rotatey(0deg);
+main .experience__work__subtitle {
+  color: #d6d6d6;
 }
-.portfolio__project__content:hover .portfolio__project__clickHere {
-  display: none;
+main .experience__extra {
+  width: 100%;
+  margin-bottom: 2.5em;
 }
-.portfolio__project__clickHere {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: -15;
-  right: -15;
-  padding: 1em;
-  width: 35%;
-  height: 13%;
-  color: white;
-  background-color: #37293B;
-  border-radius: 3em;
+main .experience__box {
+  display: grid;
+  row-gap: 1em;
+  grid-template-areas: "title date" "subtitle subtitle" "description description";
+  margin-bottom: 2.5em;
+  width: 100%;
 }
-.portfolio__project__clickHere h6 {
+main .experience__box__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  width: 12em;
+  color: #d6d6d6;
+}
+main .experience__box__date {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  align-self: center;
+  grid-area: date;
+  width: 7em;
+  text-align: end;
+  color: #707070;
+}
+main .experience__box__date small {
+  font-size: 1em;
+}
+main .experience__box__subtitle {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: subtitle;
   font-weight: 400;
+  color: #c4c4c4;
 }
-.portfolio__project:nth-of-type(1) .portfolio__project__content__image {
-  background-image: url(../imagenes/Rupatrupa.jpg);
+main .experience__box__description {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: description;
+  font-weight: 400;
+  color: #707070;
 }
-.portfolio__project:nth-of-type(2) .portfolio__project__content__image {
-  background-image: url(../imagenes/PolimathosBLANCO.png);
+main .experience__box__description hr {
+  margin-top: 2em;
+  width: 50%;
+  border: 1px solid #707070;
+}
+main .abilities {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3em;
+}
+main .abilities__knowledge, main .abilities__language, main .abilities__tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .abilities .ability {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1em;
+  height: 2.5em;
+  width: 100%;
+}
+main .abilities .ability__title {
+  margin-right: 1.5em;
+  font-weight: 400;
+  color: #575558;
+}
+main .abilities .ability__progress {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #c4c4c4;
+}
+main .abilities .ability__progress__value {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: #03181D;
+}
+main .abilities__knowledge .ability:nth-of-type(1) .ability__progress__value {
+  width: 50%;
+}
+main .abilities__knowledge .ability:nth-of-type(2) .ability__progress__value {
+  width: 30%;
+}
+main .abilities__knowledge .ability:nth-of-type(3) .ability__progress__value {
+  width: 45%;
+}
+main .abilities__knowledge .ability:nth-of-type(4) .ability__progress__value {
+  width: 80%;
+}
+main .abilities__knowledge .ability:nth-of-type(5) .ability__progress__value {
+  width: 60%;
+}
+main .abilities__knowledge .ability:nth-of-type(6) .ability__progress__value {
+  width: 60%;
+}
+main .abilities__knowledge .ability:nth-of-type(7) .ability__progress__value {
+  width: 70%;
+}
+main .abilities__knowledge .ability:nth-of-type(8) .ability__progress__value {
+  width: 50%;
+}
+main .abilities__language .ability:nth-of-type(1) .ability__progress__value {
+  width: 90%;
+}
+main .abilities__language .ability:nth-of-type(2) .ability__progress__value {
+  width: 45%;
+}
+main .abilities__tools .ability:nth-of-type(1) .ability__progress__value {
+  width: 75%;
+}
+main .abilities__tools .ability:nth-of-type(2) .ability__progress__value {
+  width: 75%;
+}
+main .abilities__tools .ability:nth-of-type(3) .ability__progress__value {
+  width: 80%;
+}
+main .abilities__tools .ability:nth-of-type(4) .ability__progress__value {
+  width: 20%;
+}
+main .abilities__tools .ability:nth-of-type(5) .ability__progress__value {
+  width: 35%;
+}
+main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
+  width: 88%;
 }

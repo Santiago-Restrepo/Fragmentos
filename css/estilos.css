@@ -89,12 +89,25 @@ Impresión (page-break, orphans, widows)
   top: 5;
   left: 5;
   z-index: 1;
-  width: 2.8em;
+  width: 5em;
 }
-.header__box ul {
-  display: none;
+.header__box .navbar {
+  position: fixed;
+  background-color: rgba(87, 66, 34, 0.9);
+  z-index: 3;
+  top: 0;
+  left: -100vw;
+  bottom: 0;
+  /*Hace que se estire y que su contendip se centre*/
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
 }
-
+.header__box .is-active {
+  left: 0;
+}
 .hero {
   display: flex;
   align-items: center;

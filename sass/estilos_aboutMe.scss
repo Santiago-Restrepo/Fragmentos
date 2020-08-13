@@ -1,0 +1,247 @@
+@import "componentes/globales";
+@import "componentes/header";
+@import "componentes/hero";
+@import "componentes/footer";
+
+@mixin titleHr($margin-top,$width,$border-color) {
+    margin-top: $margin-top;
+    width: $width;
+    border: 1px solid $border-color;
+}
+
+img{
+    width: 100px;
+}
+
+.mobile_structure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    width: 100vw;
+    .profile{
+        box-sizing: border-box;
+        @extend .mobile_structure;
+        width: 100%;
+        padding: 3em;
+        &__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1em;
+            width: 100%;
+            font-weight: 300;
+            color: #337281;
+            hr{
+                @include titleHr(.4em,100%,$Color-claro);  
+            }
+        }
+        &__aboutme{
+            margin-bottom: 2.5em;
+            text-align: center;
+            &__title{
+                margin-bottom: 1.1em;
+                font-weight: 600;
+                color: #337281;
+            }
+            &__description{
+                font-weight: 400;
+                color: #89878A;
+            }
+        }
+        &__image{
+            width: 80%;
+            margin-bottom: 2em;
+            
+            img{
+                width: 100%;
+                border-radius: 10em;
+            }
+        }
+        &__details{
+            width: 85%;
+            &__title{
+                @extend .profile__aboutme__title;
+                text-align: center;
+            }
+            &__subtitle{
+                margin-bottom: 1em;
+                font-weight: lighter;
+                color: #585858;
+            }
+            &__subtitle2{
+                margin-bottom: 1em;
+                font-weight: 100;
+                color: #89878A;
+                
+            }
+        }
+    }
+    .experience{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 3em;
+        background-color: #141A17;
+        &__title{
+            @extend .profile__title;
+        }
+        &__education{
+            &__title{
+                @extend .profile__aboutme__title;
+            }
+        }
+        &__work{
+            width: 100%;
+            margin-bottom: 2.5em;
+            &__title{
+                @extend .profile__aboutme__title;
+            }
+            &__subtitle{
+                color: rgb(214, 214, 214);
+            }
+        }
+        &__extra{
+            width: 100%;
+            margin-bottom: 2.5em;
+            &__title{
+                @extend .profile__aboutme__title;
+            }
+        }
+        &__box{
+            display: grid;
+            row-gap: 1em;
+            grid-template-areas: "title date"
+                                 "subtitle subtitle"
+                                 "description description";
+            margin-bottom: 2.5em;
+            width: 100%;
+            &__title{
+                grid-area: title;
+                width: 12em;
+                color: rgb(214, 214, 214);
+            }
+            &__date{
+                align-self: center;
+                grid-area: date;
+                width: 7em;
+                text-align: end;
+                color: #707070;
+                small{
+                    font-size: 1em;
+                }
+            }
+            &__subtitle{
+                grid-area: subtitle;
+                font-weight: 400;
+                color: $Color-claro;
+            }
+            &__description{
+                grid-area: description;
+                font-weight: 400;
+                color: #707070;
+                hr{
+                    @include titleHr(2em,50%,#707070);  
+                }
+
+            }
+        }
+    }
+    .abilities{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 3em;     
+        &__title{
+            @extend .profile__title;
+        }
+        &__subtitle{
+            @extend .profile__aboutme__title;
+        }
+        &__knowledge, &__language, &__tools{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .ability{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 1em;
+            height: 2.5em;
+            width: 100%;
+            &__title{
+                margin-right: 1.5em;
+                font-weight: 400;
+                color: $Color-gris;
+            }
+            &__progress{
+                position: relative;
+                width: 50%;
+                height: 100%;
+                border: 1px solid $Color-claro;
+                &__value{
+                    position: absolute;
+                    left: 0;
+                    height: 100%;
+                    background-color: $Color-primario-oscuro;
+                }
+            }
+        }
+        &__knowledge{
+            .ability:nth-of-type(1) .ability__progress__value{
+                width: 50%;
+            }
+            .ability:nth-of-type(2) .ability__progress__value{
+                width: 30%;
+            }
+            .ability:nth-of-type(3) .ability__progress__value{
+                width: 45%;
+            }
+            .ability:nth-of-type(4) .ability__progress__value{
+                width: 80%;
+            }
+            .ability:nth-of-type(5) .ability__progress__value{
+                width: 60%;
+            }
+            .ability:nth-of-type(6) .ability__progress__value{
+                width: 60%;
+            }
+            .ability:nth-of-type(7) .ability__progress__value{
+                width: 70%;
+            }
+            .ability:nth-of-type(8) .ability__progress__value{
+                width: 50%;
+            }
+        }
+        
+        &__language{
+            .ability:nth-of-type(1) .ability__progress__value{
+                width: 90%;
+            }
+            .ability:nth-of-type(2) .ability__progress__value{
+                width: 45%;
+            }
+        }
+        &__tools{
+            .ability:nth-of-type(1) .ability__progress__value{
+                width: 75%;
+            }
+            .ability:nth-of-type(2) .ability__progress__value{
+                width: 75%;
+            }
+            .ability:nth-of-type(3) .ability__progress__value{
+                width: 80%;
+            }
+            .ability:nth-of-type(4) .ability__progress__value{
+                width: 20%;
+            }
+            .ability:nth-of-type(5) .ability__progress__value{
+                width: 35%;
+            }
+            .ability:nth-of-type(6) .ability__progress__value{
+                width: 88%;
+            }
+        }
+    }
+}
