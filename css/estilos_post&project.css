@@ -278,18 +278,19 @@ footer .yolas {
 .moreProjectsOrPosts {
   padding: 3em;
 }
-.moreProjectsOrPosts__title {
+.moreProjectsOrPosts__title, .moreProjectsOrPosts .anotherProjectOrPost__title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 1.5em;
 }
-.moreProjectsOrPosts__title hr {
+.moreProjectsOrPosts__title hr, .moreProjectsOrPosts .anotherProjectOrPost__title hr {
   margin-top: 0.4em;
   width: 100%;
   border: 1px solid #c4c4c4;
 }
 .moreProjectsOrPosts .anotherProjectOrPost {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -304,6 +305,23 @@ footer .yolas {
   border-radius: 1em 1em 7em 7em;
   border-bottom-right-radius: 7em;
   box-shadow: #888888 0px 5px 10px 0px;
+}
+.moreProjectsOrPosts .anotherProjectOrPost__type {
+  position: absolute;
+  top: -1;
+  right: -30;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  width: 30%;
+  height: 4em;
+  color: white;
+  background-color: #37293B;
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.moreProjectsOrPosts .anotherProjectOrPost__type h5 {
+  font-weight: 400;
 }
 .moreProjectsOrPosts .anotherProjectOrPost__image {
   width: 100%;
@@ -326,6 +344,6 @@ footer .yolas {
   font-style: normal;
   font-weight: 500;
   color: white;
-  border-radius: 2em;
+  border-radius: 1em;
   background-color: #05242c;
 }
