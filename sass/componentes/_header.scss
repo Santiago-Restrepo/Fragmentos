@@ -64,9 +64,10 @@ Impresión (page-break, orphans, widows)
             width: 100%;
             li{ 
                 margin-bottom: 1em;
-                width: 100%;
+                width: 90%;
                 height: 5em;
-                background-color: #03181ddc;
+                background-color: #03181dab;
+                border-radius: 1px; 
                 
                 a{
                     display: flex;

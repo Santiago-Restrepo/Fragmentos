@@ -81,6 +81,21 @@
       </form>
       <nav class="socialMedia"><span><a href="https://www.instagram.com/restre_santi/"><img src="imagenes/instagram.svg" alt=""/></a></span><span><a href="https://twitter.com/Restre_Santi"><img src="imagenes/twitter.svg" alt=""/></a></span><span><a href="https://github.com/Santiago-Restrepo"><img src="imagenes/github.svg" alt=""/></a></span><span><a href="https://www.facebook.com/santiago.restrepo.374/"><img src="imagenes/facebook.svg" alt=""/></a></span></nav><span class="yolas">© 2020 by Santiago Restrepo</span>
     </footer>
-    <script src="js/menu.js"></script>
+    <script>
+      const $menu = document.querySelector('.navbar');
+      const $button = document.querySelector('.hamburguer__menu > img');
+      
+      $button.addEventListener('click',hideshow);
+      
+      function hideshow(){
+          if($menu.classList.contains('is-active')){
+              $menu.classList.remove('is-active');
+              $button.setAttribute('src', 'imagenes/hamburguer_menu.svg')
+          }else{
+              $menu.classList.add('is-active');
+              $button.setAttribute('src', 'imagenes/close.svg')
+          }
+      }
+    </script>
   </body>
 </html>

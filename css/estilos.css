@@ -117,9 +117,10 @@ Impresión (page-break, orphans, widows)
 }
 .header__box ul li {
   margin-bottom: 1em;
-  width: 100%;
+  width: 90%;
   height: 5em;
-  background-color: #03181ddc;
+  background-color: #03181dab;
+  border-radius: 1px;
 }
 .header__box ul li a {
   display: flex;
@@ -327,7 +328,7 @@ Impresión (page-break, orphans, widows)
   background-image: url(../imagenes/simon.PNG);
 }
 .focuseye .recentPosts {
-  width: 70vw;
+  width: 80vw;
 }
 .focuseye .recentPosts__title {
   display: flex;
