@@ -37,6 +37,8 @@ Impresión (page-break, orphans, widows)
             }
         }
         &-image{
+            display: flex;
+            justify-content: center;
             width: 100%; 
             margin: 0 auto;
             img{

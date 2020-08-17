@@ -11,6 +11,7 @@ $Color-variacion: #FF3644;
 $Color-gris: #575558;
 $break-mobile-M: 375px;
 $break-mobile-L: 425px;
+$break-mobile-tablet: 597px;
 $break-tablet: 768px;
 $break-laptop: 1024px;
 $break-laptop-L: 1440px;
@@ -62,33 +63,4 @@ h5{
 
 h6{
     font-size: 1.2em;
-}
-
-
-@media only screen and (min-width: $break-mobile-M){
-
-    h1{
-        font-size: 4.5em;
-    }
-    
-    h2{
-        font-size: 3em;
-    }
-    
-    h3{
-        font-size: 1.8em;
-    }
-    
-    h4{
-        font-size: 1.6em;
-    }
-    
-    h5{
-        font-size: 1.4em;    
-    }
-    
-    h6{
-        font-size: 1.2em;
-    }
-        
 }

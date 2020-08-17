@@ -49,31 +49,6 @@ h6 {
   font-size: 1.2em;
 }
 
-@media only screen and (min-width: 375px) {
-  h1 {
-    font-size: 4.5em;
-  }
-
-  h2 {
-    font-size: 3em;
-  }
-
-  h3 {
-    font-size: 1.8em;
-  }
-
-  h4 {
-    font-size: 1.6em;
-  }
-
-  h5 {
-    font-size: 1.4em;
-  }
-
-  h6 {
-    font-size: 1.2em;
-  }
-}
 /*
 Posicionamiento (position, top, right, bottom, left, z-index)
 Composición (float, clear, display, box-sizing, visibility, overflow, clip)
@@ -218,6 +193,8 @@ Impresión (page-break, orphans, widows)
   border: 1px solid #1E454E;
 }
 .whoIAm__container-image {
+  display: flex;
+  justify-content: center;
   width: 100%;
   margin: 0 auto;
 }
@@ -281,6 +258,8 @@ Impresión (page-break, orphans, widows)
   background: linear-gradient(180deg, #37293b 50%, #000e3b 100%);
 }
 .focuseye .recentProjects {
+  display: flex;
+  flex-direction: column;
   width: 80vw;
   border-bottom: 1px solid #c4c4c4;
   margin-bottom: 3em;
@@ -298,17 +277,25 @@ Impresión (page-break, orphans, widows)
   width: 30%;
   border: 1px solid #FF3644;
 }
-.focuseye .recentProjects .recentProject {
+.focuseye .recentProjects__content {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.focuseye .recentProjects__content .recentProject {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 2em;
   margin-bottom: 3em;
+  width: 100%;
   height: 35em;
   text-align: center;
   background-color: white;
 }
-.focuseye .recentProjects .recentProject__image {
+.focuseye .recentProjects__content .recentProject__image {
   margin-bottom: 1.5em;
   width: 100%;
   height: 50%;
@@ -316,22 +303,22 @@ Impresión (page-break, orphans, widows)
   background-position: 50% 50%;
   background-size: cover;
 }
-.focuseye .recentProjects .recentProject__title {
+.focuseye .recentProjects__content .recentProject__title {
   margin-bottom: 1em;
   color: #000E3B;
 }
-.focuseye .recentProjects .recentProject__title hr {
+.focuseye .recentProjects__content .recentProject__title hr {
   margin-top: 0.2em;
   width: 100%;
   border: 1px solid #c4c4c4;
 }
-.focuseye .recentProjects .recentProject__description {
+.focuseye .recentProjects__content .recentProject__description {
   margin-bottom: 2.2em;
   padding: 0 2em;
   font-weight: 400;
   color: #37293B;
 }
-.focuseye .recentProjects .recentProject__button {
+.focuseye .recentProjects__content .recentProject__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -343,13 +330,13 @@ Impresión (page-break, orphans, widows)
   border-radius: 1em;
   background-color: #03181D;
 }
-.focuseye .recentProjects .recentProject:nth-of-type(1) .recentProject__image {
+.focuseye .recentProjects__content .recentProject:nth-of-type(1) .recentProject__image {
   background-image: url(../imagenes/Rupatrupa.jpg);
 }
-.focuseye .recentProjects .recentProject:nth-of-type(2) .recentProject__image {
+.focuseye .recentProjects__content .recentProject:nth-of-type(2) .recentProject__image {
   background-image: url(../imagenes/PolimathosBLANCO.png);
 }
-.focuseye .recentProjects .recentProject:nth-of-type(3) .recentProject__image {
+.focuseye .recentProjects__content .recentProject:nth-of-type(3) .recentProject__image {
   background-image: url(../imagenes/simon.PNG);
 }
 .focuseye .recentPosts {
@@ -368,33 +355,37 @@ Impresión (page-break, orphans, widows)
   width: 30%;
   border: 1px solid #FF3644;
 }
-.focuseye .recentPosts .recentPost {
+.focuseye .recentPosts__content {
+  width: 100%;
+}
+.focuseye .recentPosts__content .recentPost {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-items: flex-end;
   box-sizing: border-box;
   padding: 0.7em;
-  width: 100%;
+  max-width: 20em;
   height: 20em;
   border-radius: 0.5em;
   color: #8F8F8F;
   text-decoration: none;
   background-color: white;
+  box-shadow: 0px 6px 10px 0px #131315;
 }
-.focuseye .recentPosts .recentPost__image {
-  margin-bottom: 1.5em;
+.focuseye .recentPosts__content .recentPost__image {
   width: 100%;
   height: 60%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-.focuseye .recentPosts .recentPost__title {
-  align-self: center;
+.focuseye .recentPosts__content .recentPost__title {
+  margin: auto;
+  text-align: center;
   font-weight: 400;
 }
-.focuseye .recentPosts .recentPost__date {
+.focuseye .recentPosts__content .recentPost__date {
   position: absolute;
   right: 15;
   bottom: 7.5;
@@ -432,7 +423,7 @@ Impresión (page-break, orphans, widows)
   align-items: center;
   padding: 2em;
   width: 80%;
-  height: 70%;
+  height: 90%;
   text-align: center;
   background-color: #FFDE5F;
   color: #000E3B;
@@ -477,7 +468,6 @@ footer {
   color: white;
 }
 footer h2 {
-  width: 65%;
   margin-bottom: 1em;
 }
 footer h6 {
@@ -514,9 +504,12 @@ footer form button {
   background-color: #03181D;
 }
 footer .socialMedia {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 10em;
 }
 footer .socialMedia span a img {
@@ -524,4 +517,63 @@ footer .socialMedia span a img {
 }
 footer .yolas {
   font-size: 1.1em;
+}
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media only screen and (min-width: 425px) {
+  html {
+    font-size: 73%;
+  }
+
+  .whoIAm__container-image img {
+    width: 80%;
+  }
+
+  .focuseye .recentPosts {
+    width: 90vw;
+  }
+  .focuseye .recentPosts__content {
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: repeat(auto-fill, 48%);
+  }
+  .focuseye .recentPosts__content .recentPost {
+    height: 15em;
+  }
+  .focuseye .recentPosts__content .recentPost__title {
+    font-size: 1em;
+  }
+  .focuseye .recentPosts__content .recentPost__date {
+    font-size: 0.5em;
+  }
+  .focuseye .recentProjects__content {
+    justify-items: self-end;
+  }
+  .focuseye .recentProjects__content .recentProject {
+    max-width: 25em;
+  }
+}
+@media only screen and (min-width: 597px) {
+  html {
+    font-size: 75%;
+  }
+
+  .focuseye .recentProjects {
+    width: 90vw;
+  }
+
+  .focuseye .recentProjects .recentProjects__content {
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: repeat(auto-fill, 48%);
+  }
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 78%;
+  }
 }

@@ -5,3 +5,66 @@
 @import "componentes/focuseye";
 @import "componentes/weeklyMessage";
 @import "componentes/footer";
+
+@media only screen and (min-width: $break-mobile-M){
+    html{
+        font-size: 70%;
+    }    
+}
+
+@media only screen and (min-width: $break-mobile-L){
+    html{
+        font-size: 73%;
+    }
+
+    .whoIAm__container-image img{
+        width: 80%;
+    }   
+
+    .focuseye{
+        .recentPosts{
+            width: 90vw;
+            &__content{
+                display: grid;
+                column-gap: 2%;
+                grid-template-columns: repeat(auto-fill, 48%);
+                .recentPost{
+                    height: 15em;
+                    &__title{
+                        font-size: 1em;
+                    }
+                    &__date{
+                        font-size: .5em;
+                    }
+                }
+            }
+        }
+        .recentProjects{
+            &__content{
+                justify-items: self-end;
+                .recentProject{
+                    max-width: 25em;
+                }
+            }
+        }
+
+    }    
+}
+@media only screen and (min-width: $break-mobile-tablet){
+    html{
+        font-size: 75%;
+    }
+    .focuseye .recentProjects{
+        width: 90vw;
+    }
+    .focuseye .recentProjects .recentProjects__content{
+        display: grid;
+        column-gap: 2%;
+        grid-template-columns: repeat(auto-fill, 48%);
+    }    
+}
+@media only screen and (min-width: $break-tablet){
+    html{
+        font-size: 78%;
+    }    
+}

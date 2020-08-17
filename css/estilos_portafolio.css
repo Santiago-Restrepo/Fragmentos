@@ -60,31 +60,6 @@ h6 {
   font-size: 1.2em;
 }
 
-@media only screen and (min-width: 375px) {
-  h1 {
-    font-size: 4.5em;
-  }
-
-  h2 {
-    font-size: 3em;
-  }
-
-  h3 {
-    font-size: 1.8em;
-  }
-
-  h4 {
-    font-size: 1.6em;
-  }
-
-  h5 {
-    font-size: 1.4em;
-  }
-
-  h6 {
-    font-size: 1.2em;
-  }
-}
 /*
 Posicionamiento (position, top, right, bottom, left, z-index)
 Composición (float, clear, display, box-sizing, visibility, overflow, clip)
@@ -216,7 +191,6 @@ footer {
   color: white;
 }
 footer h2 {
-  width: 65%;
   margin-bottom: 1em;
 }
 footer h6 {
@@ -253,9 +227,12 @@ footer form button {
   background-color: #03181D;
 }
 footer .socialMedia {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 10em;
 }
 footer .socialMedia span a img {
