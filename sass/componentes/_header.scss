@@ -23,7 +23,7 @@ Impresión (page-break, orphans, widows)
         padding-bottom: 2em;
         margin: .1em 2em;
         border-bottom: 2px solid $Color-claro;
-        h2{
+        &__title{
             font-style: italic;
             font-size: 3.5em;
             font-weight: 300;
@@ -48,38 +48,38 @@ Impresión (page-break, orphans, widows)
             bottom: 0;
             width: 100vw;
             display: flex;
-            align-items: center;    
+            align-items: center;   
             justify-content: center;
             transition: .5s;
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                list-style: none;
+                text-decoration: none;
+                width: 100%;
+                li{ 
+                    margin-bottom: 1em;
+                    width: 90%;
+                    height: 5em;
+                    background-color: #03181dab;
+                    border-radius: 1px; 
+                    
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 2.5em;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
         }
         .is-active{
             left: 0;
-        }
-        ul{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            list-style: none;
-            text-decoration: none;
-            width: 100%;
-            li{ 
-                margin-bottom: 1em;
-                width: 90%;
-                height: 5em;
-                background-color: #03181dab;
-                border-radius: 1px; 
-                
-                a{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 100%;
-                    font-size: 2.5em;
-                    text-decoration: none;
-                    color: white;
-                }
-            }
         }
     }
 }
