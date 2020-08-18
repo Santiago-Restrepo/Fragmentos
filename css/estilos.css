@@ -303,16 +303,22 @@ Impresión (page-break, orphans, widows)
   background-position: 50% 50%;
   background-size: cover;
 }
-.focuseye .recentProjects__content .recentProject__title {
+.focuseye .recentProjects__content .recentProject__info {
+  width: 100%;
+}
+.focuseye .recentProjects__content .recentProject__info__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 1em;
   color: #000E3B;
 }
-.focuseye .recentProjects__content .recentProject__title hr {
+.focuseye .recentProjects__content .recentProject__info__title hr {
   margin-top: 0.2em;
-  width: 100%;
+  width: 80%;
   border: 1px solid #c4c4c4;
 }
-.focuseye .recentProjects__content .recentProject__description {
+.focuseye .recentProjects__content .recentProject__info__description {
   margin-bottom: 2.2em;
   padding: 0 2em;
   font-weight: 400;
@@ -365,8 +371,9 @@ Impresión (page-break, orphans, widows)
   justify-items: flex-end;
   box-sizing: border-box;
   padding: 0.7em;
-  max-width: 20em;
-  height: 20em;
+  margin-bottom: 1.5em;
+  width: 100%;
+  height: 23em;
   border-radius: 0.5em;
   color: #8F8F8F;
   text-decoration: none;
@@ -454,33 +461,38 @@ Efectos visuales (box-shadow, text-shadow, transform, transition)
 Miscelánea (opacity, cursor, filters)
 Impresión (page-break, orphans, widows)
 */
-footer {
+.footer {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+.footer__content {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 3em;
-  width: 100vw;
-  height: 100vh;
+  padding: 3em;
+  width: 100%;
+  height: 100%;
   text-align: center;
   background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
   color: white;
 }
-footer h2 {
+.footer__content h2 {
   margin-bottom: 1em;
 }
-footer h6 {
+.footer__content h6 {
   font-weight: lighter;
   margin-bottom: 2.5em;
 }
-footer form {
+.footer__content form {
   display: flex;
   position: relative;
   width: 90%;
   margin-bottom: 3em;
 }
-footer form input {
+.footer__content form input {
   padding: auto 0;
   padding-left: 1em;
   width: 100%;
@@ -488,11 +500,11 @@ footer form input {
   border-radius: 2em;
   border: none;
 }
-footer form input::placeholder {
+.footer__content form input::placeholder {
   font-family: "Rubik", sans-serif;
   font-size: 1.1em;
 }
-footer form button {
+.footer__content form button {
   position: absolute;
   bottom: -15;
   right: 0;
@@ -503,7 +515,7 @@ footer form button {
   border-radius: 1em;
   background-color: #03181D;
 }
-footer .socialMedia {
+.footer__content .socialMedia {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 1em;
@@ -512,36 +524,45 @@ footer .socialMedia {
   width: fit-content;
   margin-bottom: 10em;
 }
-footer .socialMedia span a img {
+.footer__content .socialMedia span a img {
   width: 2.8em;
 }
-footer .yolas {
+.footer__content .yolas {
   font-size: 1.1em;
 }
 
 @media only screen and (min-width: 375px) {
   html {
-    font-size: 70%;
+    font-size: 69%;
   }
 }
 @media only screen and (min-width: 425px) {
   html {
-    font-size: 73%;
+    font-size: 71%;
   }
 
   .whoIAm__container-image img {
-    width: 80%;
+    width: 85%;
   }
 
+  .focuseye .recentProjects__content {
+    justify-items: center;
+  }
+  .focuseye .recentProjects__content .recentProject {
+    max-width: 25em;
+  }
   .focuseye .recentPosts {
     width: 90vw;
   }
   .focuseye .recentPosts__content {
     display: grid;
+    justify-items: center;
     column-gap: 2%;
+    row-gap: 5%;
     grid-template-columns: repeat(auto-fill, 48%);
   }
   .focuseye .recentPosts__content .recentPost {
+    max-width: 10em;
     height: 15em;
   }
   .focuseye .recentPosts__content .recentPost__title {
@@ -550,30 +571,77 @@ footer .yolas {
   .focuseye .recentPosts__content .recentPost__date {
     font-size: 0.5em;
   }
-  .focuseye .recentProjects__content {
-    justify-items: self-end;
-  }
-  .focuseye .recentProjects__content .recentProject {
-    max-width: 25em;
-  }
 }
 @media only screen and (min-width: 597px) {
   html {
-    font-size: 75%;
+    font-size: 73%;
+  }
+
+  .whoIAm__container-image img {
+    width: 60%;
   }
 
   .focuseye .recentProjects {
     width: 90vw;
   }
-
-  .focuseye .recentProjects .recentProjects__content {
+  .focuseye .recentProjects__content {
     display: grid;
     column-gap: 2%;
+    row-gap: 5%;
     grid-template-columns: repeat(auto-fill, 48%);
   }
 }
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 78%;
+    font-size: 74%;
+  }
+
+  .focuseye .recentProjects__content {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+  .focuseye .recentProjects__content .recentProject {
+    flex-direction: row;
+    padding-bottom: 0;
+    max-width: 55em;
+    max-height: 18em;
+    border-radius: 0 55px 55px 0;
+  }
+  .focuseye .recentProjects__content .recentProject__image {
+    width: 40%;
+    height: 100%;
+    margin-bottom: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+  }
+  .focuseye .recentProjects__content .recentProject__info {
+    width: 45%;
+  }
+  .focuseye .recentProjects__content .recentProject__info__description {
+    margin-bottom: 0;
+  }
+  .focuseye .recentProjects__content .recentProject__button {
+    width: 15%;
+    height: 100%;
+    border-radius: 0 55px 55px 0;
+  }
+  .focuseye .recentPosts {
+    width: 80vw;
+  }
+  .focuseye .recentPosts__content {
+    column-gap: 5%;
+    row-gap: 5%;
+    grid-template-columns: repeat(auto-fill, 30%);
+  }
+  .focuseye .recentPosts__content .recentPost {
+    max-width: 10em;
+    height: 15em;
+  }
+  .focuseye .recentPosts__content .recentPost__title {
+    font-size: 1em;
+  }
+  .focuseye .recentPosts__content .recentPost__date {
+    font-size: 0.5em;
   }
 }

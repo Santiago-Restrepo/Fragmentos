@@ -8,27 +8,40 @@
 
 @media only screen and (min-width: $break-mobile-M){
     html{
-        font-size: 70%;
+        font-size: 69%;
     }    
 }
 
 @media only screen and (min-width: $break-mobile-L){
     html{
-        font-size: 73%;
+        font-size: 71%;
     }
 
-    .whoIAm__container-image img{
-        width: 80%;
-    }   
+    .whoIAm__container-image{
+        img{
+           width: 85%;
+        }   
+    }
 
     .focuseye{
+        .recentProjects{
+            &__content{
+                justify-items: center;
+                .recentProject{
+                    max-width: 25em;
+                }
+            }
+        }
         .recentPosts{
             width: 90vw;
             &__content{
                 display: grid;
+                justify-items: center;
                 column-gap: 2%;
+                row-gap: 5%;
                 grid-template-columns: repeat(auto-fill, 48%);
                 .recentPost{
+                    max-width: 10em;
                     height: 15em;
                     &__title{
                         font-size: 1em;
@@ -39,32 +52,82 @@
                 }
             }
         }
-        .recentProjects{
-            &__content{
-                justify-items: self-end;
-                .recentProject{
-                    max-width: 25em;
-                }
-            }
-        }
-
     }    
 }
 @media only screen and (min-width: $break-mobile-tablet){
     html{
-        font-size: 75%;
+        font-size: 73%;
     }
-    .focuseye .recentProjects{
-        width: 90vw;
+    .whoIAm__container-image{
+        img{
+           width: 60%;
+        }   
     }
-    .focuseye .recentProjects .recentProjects__content{
-        display: grid;
-        column-gap: 2%;
-        grid-template-columns: repeat(auto-fill, 48%);
-    }    
+    .focuseye{
+        .recentProjects{
+            width: 90vw;
+            &__content{
+                display: grid;
+                column-gap: 2%;
+                row-gap: 5%;
+                grid-template-columns: repeat(auto-fill, 48%);
+            }
+        }
+    }
 }
 @media only screen and (min-width: $break-tablet){
     html{
-        font-size: 78%;
-    }    
+        font-size: 74%;
+    }
+    .focuseye{
+        .recentProjects{
+            &__content{
+                display: flex;
+                flex-direction: column;
+                width: 80vw;
+                .recentProject{
+                    flex-direction: row;
+                    padding-bottom: 0;
+                    max-width:55em;
+                    max-height: 18em;
+                    border-radius: 0 55px 55px 0;
+                    &__image{
+                        width: 40%;
+                        height: 100%;
+                        margin-bottom: 0;
+                        clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+                    }
+                    &__info{
+                        width: 45%;
+                        &__description{
+                            margin-bottom: 0;
+                        }
+                    }
+                    &__button{
+                        width: 15%;
+                        height: 100%;
+                        border-radius: 0 55px 55px 0;
+                    }
+                }
+            }
+        }
+        .recentPosts{
+            width: 80vw;
+            &__content{
+                column-gap: 5%;
+                row-gap: 5%;
+                grid-template-columns: repeat(auto-fill, 30%);
+                .recentPost{
+                    max-width: 10em;
+                    height: 15em;
+                    &__title{
+                        font-size: 1em;
+                    }
+                    &__date{
+                        font-size: .5em;
+                    }
+                }
+            }
+        }
+    }
 }
