@@ -463,8 +463,11 @@ Impresión (page-break, orphans, widows)
 */
 .footer {
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
   width: 100vw;
   height: 100vh;
+  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
 }
 .footer__content {
   box-sizing: border-box;
@@ -474,15 +477,14 @@ Impresión (page-break, orphans, widows)
   align-items: center;
   padding: 3em;
   width: 100%;
-  height: 100%;
+  height: 80%;
   text-align: center;
-  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
   color: white;
 }
-.footer__content h2 {
+.footer__content__text h2 {
   margin-bottom: 1em;
 }
-.footer__content h6 {
+.footer__content__text h6 {
   font-weight: lighter;
   margin-bottom: 2.5em;
 }
@@ -593,6 +595,10 @@ Impresión (page-break, orphans, widows)
     row-gap: 5%;
     grid-template-columns: repeat(auto-fill, 48%);
   }
+
+  .weeklyMessage__box {
+    width: 60%;
+  }
 }
 @media only screen and (min-width: 768px) {
   html {
@@ -609,6 +615,7 @@ Impresión (page-break, orphans, widows)
     margin: 0;
     padding: 0;
     border-bottom: none;
+    background-color: #03181D;
   }
   .header__box .hamburguer__menu {
     display: none;
@@ -623,8 +630,9 @@ Impresión (page-break, orphans, widows)
     height: 100%;
   }
   .header__box .navbar ul {
-    flex-direction: row;
-    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    width: 75%;
     height: 100%;
   }
   .header__box .navbar ul li {
@@ -694,5 +702,49 @@ Impresión (page-break, orphans, widows)
   }
   .focuseye .recentPosts__content .recentPost__date {
     font-size: 0.5em;
+  }
+  .focuseye .weeklyMessage__box {
+    height: 80%;
+  }
+
+  .footer__content form {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+
+  .header {
+    height: 14vh;
+  }
+  .header__box {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7em;
+  }
+  .header__box__title {
+    display: block;
+    font-size: 3em;
+  }
+  .header__box .navbar {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header__box .navbar ul {
+    width: 37em;
+  }
+  .header__box .navbar ul li a {
+    font-size: 1.4em;
+  }
+
+  .footer__content {
+    justify-content: space-between;
+    padding: 5em 0 3em 0;
+    height: 100%;
   }
 }

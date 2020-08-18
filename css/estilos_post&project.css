@@ -104,10 +104,7 @@ Impresión (page-break, orphans, widows)
   justify-content: center;
   transition: 0.5s;
 }
-.header__box .is-active {
-  left: 0;
-}
-.header__box ul {
+.header__box .navbar ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,14 +112,14 @@ Impresión (page-break, orphans, widows)
   text-decoration: none;
   width: 100%;
 }
-.header__box ul li {
+.header__box .navbar ul li {
   margin-bottom: 1em;
   width: 90%;
   height: 5em;
   background-color: #03181dab;
   border-radius: 1px;
 }
-.header__box ul li a {
+.header__box .navbar ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,6 +128,9 @@ Impresión (page-break, orphans, widows)
   font-size: 2.5em;
   text-decoration: none;
   color: white;
+}
+.header__box .is-active {
+  left: 0;
 }
 
 .hero {
@@ -168,8 +168,11 @@ Impresión (page-break, orphans, widows)
 */
 .footer {
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
   width: 100vw;
   height: 100vh;
+  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
 }
 .footer__content {
   box-sizing: border-box;
@@ -179,15 +182,14 @@ Impresión (page-break, orphans, widows)
   align-items: center;
   padding: 3em;
   width: 100%;
-  height: 100%;
+  height: 80%;
   text-align: center;
-  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
   color: white;
 }
-.footer__content h2 {
+.footer__content__text h2 {
   margin-bottom: 1em;
 }
-.footer__content h6 {
+.footer__content__text h6 {
   font-weight: lighter;
   margin-bottom: 2.5em;
 }
@@ -393,4 +395,106 @@ Impresión (page-break, orphans, widows)
   color: white;
   border-radius: 1em;
   background-color: #05242c;
+}
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 69%;
+  }
+}
+@media only screen and (min-width: 425px) {
+  html {
+    font-size: 71%;
+  }
+}
+@media only screen and (min-width: 597px) {
+  html {
+    font-size: 73%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 74%;
+  }
+
+  .header {
+    height: 15vh;
+    padding: 0;
+  }
+  .header__box {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    background-color: #03181D;
+  }
+  .header__box .hamburguer__menu {
+    display: none;
+  }
+  .header__box__title {
+    display: none;
+  }
+  .header__box .navbar {
+    position: relative;
+    left: 0;
+    background-color: #03181D;
+    height: 100%;
+  }
+  .header__box .navbar ul {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    width: 75%;
+    height: 100%;
+  }
+  .header__box .navbar ul li {
+    margin-bottom: 0;
+    background-color: transparent;
+    height: inherit;
+  }
+  .header__box .navbar ul li a {
+    font-size: 1.8em;
+    font-weight: 200;
+  }
+  .header__box .navbar ul li:hover {
+    background-color: #010a0c;
+  }
+  .header__box .active__page {
+    border-bottom: 3px solid white;
+  }
+
+  .hero {
+    height: 85vh;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+
+  .header {
+    height: 14vh;
+  }
+  .header__box {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7em;
+  }
+  .header__box__title {
+    display: block;
+    font-size: 3em;
+  }
+  .header__box .navbar {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .header__box .navbar ul {
+    width: 37em;
+  }
+  .header__box .navbar ul li a {
+    font-size: 1.4em;
+  }
 }

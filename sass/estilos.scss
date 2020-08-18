@@ -83,6 +83,11 @@
             }
         }
     }
+    .weeklyMessage{
+        &__box{
+            width: 60%;
+        }
+    }
 }
 @media only screen and (min-width: $break-tablet){
     html{
@@ -98,6 +103,7 @@
             margin: 0;
             padding: 0;
             border-bottom: none;
+            background-color: $Color-primario-oscuro;
             .hamburguer__menu{
                 display: none;
             }
@@ -110,8 +116,9 @@
                 background-color: $Color-primario-oscuro;
                 height: 100%;
                 ul{
-                    flex-direction: row;
-                    width: 70%;
+                    display: grid;
+                    grid-template-columns: 1fr 2fr 1fr 2fr;
+                    width: 75%;
                     height: 100%;
                     li{
                         margin-bottom: 0;
@@ -188,6 +195,60 @@
                     }
                 }
             }
+        }
+        .weeklyMessage{
+            &__box{
+                height: 80%;
+            }
+        }
+        
+    }
+    .footer{
+        &__content{
+            form{
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $break-laptop){
+    html{
+        font-size: 75%;
+    }
+    
+    .header{
+        height: 14vh;
+        &__box{
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0 7em;
+            &__title{
+                display: block;
+                font-size: 3em;
+            }
+            .navbar{
+                width: fit-content;
+                ul{
+                    width: 37em;
+                    li{
+                        a{
+                            font-size: 1.4em;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    } 
+    
+    .footer{
+        &__content{
+            justify-content: space-between;
+            padding:5em 0 3em 0;
+            height: 100%;
         }
     }
 }
