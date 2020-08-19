@@ -198,12 +198,12 @@
                 }
             }
         }
-        .weeklyMessage{
-            &__box{
-                height: 80%;
-            }
-        }
         
+    }
+    .weeklyMessage{
+        &__box{
+            height: 80%;
+        }
     }
     .footer{
         &__content{
@@ -270,6 +270,25 @@
                 width: 40%;
     
             }
+        }
+    }
+    .focuseye{
+        .recentPosts{
+            &__content{
+                .recentPost{
+                    max-width: 15em;
+                    height: 18em;
+                    &__date{
+                        font-size: .7em;
+                    }
+                }
+            }
+        }
+    }
+
+    .weeklyMessage{
+        &__box{
+            width: 50%;
         }
     }
     

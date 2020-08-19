@@ -705,7 +705,8 @@ Impresión (page-break, orphans, widows)
   .focuseye .recentPosts__content .recentPost__date {
     font-size: 0.5em;
   }
-  .focuseye .weeklyMessage__box {
+
+  .weeklyMessage__box {
     height: 80%;
   }
 
@@ -766,6 +767,18 @@ Impresión (page-break, orphans, widows)
     margin: 0;
     height: 20em;
     width: 40%;
+  }
+
+  .focuseye .recentPosts__content .recentPost {
+    max-width: 15em;
+    height: 18em;
+  }
+  .focuseye .recentPosts__content .recentPost__date {
+    font-size: 0.7em;
+  }
+
+  .weeklyMessage__box {
+    width: 50%;
   }
 
   .footer__content {
