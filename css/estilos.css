@@ -11,6 +11,7 @@ html {
   font-size: 62.5%;
   position: relative;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -64,6 +65,7 @@ Impresión (page-break, orphans, widows)
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 13vh;
   padding: 2em 0;
   background-color: #1E454E;
 }
@@ -137,9 +139,9 @@ Impresión (page-break, orphans, widows)
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   width: 100vw;
-  height: 65vh;
-  padding-top: 15em;
+  height: 87vh;
   color: white;
   background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
 }
@@ -582,9 +584,6 @@ Impresión (page-break, orphans, widows)
     font-size: 73%;
   }
 
-  .whoIAm__container {
-    height: 100vh;
-  }
   .whoIAm__container__info-image img {
     width: 60%;
   }
@@ -612,7 +611,6 @@ Impresión (page-break, orphans, widows)
   }
 
   .header {
-    height: 15vh;
     padding: 0;
   }
   .header__box {
@@ -647,7 +645,7 @@ Impresión (page-break, orphans, widows)
     height: inherit;
   }
   .header__box .navbar ul li a {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 200;
   }
   .header__box .navbar ul li:hover {
@@ -655,10 +653,6 @@ Impresión (page-break, orphans, widows)
   }
   .header__box .active__page {
     border-bottom: 3px solid white;
-  }
-
-  .hero {
-    height: 85vh;
   }
 
   .focuseye .recentProjects__content {
@@ -757,7 +751,10 @@ Impresión (page-break, orphans, widows)
   .whoIAm__container {
     box-sizing: border-box;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     padding: 2em 5em;
   }
   .whoIAm__container__info {

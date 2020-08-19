@@ -11,6 +11,7 @@ html {
   font-size: 62.5%;
   position: relative;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -64,6 +65,7 @@ Impresión (page-break, orphans, widows)
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 13vh;
   padding: 2em 0;
   background-color: #1E454E;
 }
@@ -137,9 +139,9 @@ Impresión (page-break, orphans, widows)
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   width: 100vw;
-  height: 65vh;
-  padding-top: 15em;
+  height: 87vh;
   color: white;
   background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
 }
@@ -411,6 +413,10 @@ Impresión (page-break, orphans, widows)
   html {
     font-size: 73%;
   }
+
+  .footer__content form {
+    width: 60%;
+  }
 }
 @media only screen and (min-width: 768px) {
   html {
@@ -496,5 +502,11 @@ Impresión (page-break, orphans, widows)
   }
   .header__box .navbar ul li a {
     font-size: 1.4em;
+  }
+
+  .footer__content {
+    justify-content: space-between;
+    padding: 5em 0 3em 0;
+    height: 100%;
   }
 }

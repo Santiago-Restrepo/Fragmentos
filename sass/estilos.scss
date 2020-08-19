@@ -61,7 +61,6 @@
     }
     .whoIAm{
         &__container{
-            height: 100vh;
             &__info{
                 &-image{
                     img{
@@ -99,7 +98,6 @@
     }
 
     .header{
-        height: 15vh;
         padding:0;
         &__box{
             width: 100%;
@@ -129,7 +127,7 @@
                         background-color: transparent;
                         height: inherit;
                         a{
-                            font-size: 1.8em;
+                            font-size: 1.5em;
                             font-weight: 200;
                             
                         }
@@ -144,10 +142,6 @@
             }
 
         }
-    }
-
-    .hero{
-        height: 85vh;
     }
 
     .focuseye{
@@ -255,7 +249,8 @@
         &__container{
             box-sizing: border-box;
             flex-direction: row;
-            align-items: center;
+            align-items: flex-end;
+            height: fit-content;
             padding: 2em 5em;
             &__info{
                 width: 25em;

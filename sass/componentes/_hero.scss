@@ -4,16 +4,16 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     width: 100vw;
-    height: 65vh;
-    padding-top: 15em;
+    height: 87vh;
     color: white;
     background: linear-gradient(0deg, rgba(6,14,16,1) 0%, rgba(6,14,16,1) 15%, rgba(30,69,78,1) 100%);
     &__title{
         text-align: center;
         font-style: normal;
         font-weight: 400;
-        margin-bottom: .2em;    
+        margin-bottom: .2em;   
     }
     &__description{
         color: white;

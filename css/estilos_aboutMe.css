@@ -11,6 +11,7 @@ html {
   font-size: 62.5%;
   position: relative;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -64,6 +65,7 @@ Impresión (page-break, orphans, widows)
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 13vh;
   padding: 2em 0;
   background-color: #1E454E;
 }
@@ -137,9 +139,9 @@ Impresión (page-break, orphans, widows)
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   width: 100vw;
-  height: 65vh;
-  padding-top: 15em;
+  height: 87vh;
   color: white;
   background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
 }
@@ -476,7 +478,6 @@ main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
   }
 
   .header {
-    height: 15vh;
     padding: 0;
   }
   .header__box {
@@ -511,7 +512,7 @@ main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
     height: inherit;
   }
   .header__box .navbar ul li a {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 200;
   }
   .header__box .navbar ul li:hover {
@@ -521,8 +522,8 @@ main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
     border-bottom: 3px solid white;
   }
 
-  .hero {
-    height: 85vh;
+  .footer__content form {
+    width: 60%;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -530,9 +531,6 @@ main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
     font-size: 75%;
   }
 
-  .header {
-    height: 14vh;
-  }
   .header__box {
     box-sizing: border-box;
     display: flex;
@@ -554,5 +552,11 @@ main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
   }
   .header__box .navbar ul li a {
     font-size: 1.4em;
+  }
+
+  .footer__content {
+    justify-content: space-between;
+    padding: 5em 0 3em 0;
+    height: 100%;
   }
 }

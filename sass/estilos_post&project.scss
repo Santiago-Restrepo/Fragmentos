@@ -178,6 +178,13 @@
     html{
         font-size: 73%;
     }
+    .footer{
+        &__content{
+            form{
+                width: 60%;
+            }
+        }
+    }
 }
 @media only screen and (min-width: $break-tablet){
     html{

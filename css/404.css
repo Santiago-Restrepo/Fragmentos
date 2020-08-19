@@ -10,6 +10,7 @@ html {
   font-size: 62.5%;
   position: relative;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -48,26 +49,6 @@ h6 {
   font-size: 1.2em;
 }
 
-@media only screen and (min-width: 375px) {
-  html {
-    font-size: 70%;
-  }
-}
-@media only screen and (min-width: 425px) {
-  html {
-    font-size: 75%;
-  }
-}
-@media only screen and (min-width: 597px) {
-  html {
-    font-size: 78%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  html {
-    font-size: 80%;
-  }
-}
 body {
   width: 100vw;
   height: 100vh;

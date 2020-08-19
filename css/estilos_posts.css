@@ -22,6 +22,7 @@ html {
   font-size: 62.5%;
   position: relative;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -75,6 +76,7 @@ Impresión (page-break, orphans, widows)
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 13vh;
   padding: 2em 0;
   background-color: #1E454E;
 }
@@ -148,9 +150,9 @@ Impresión (page-break, orphans, widows)
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   width: 100vw;
-  height: 65vh;
-  padding-top: 15em;
+  height: 87vh;
   color: white;
   background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
 }
@@ -274,7 +276,6 @@ Impresión (page-break, orphans, widows)
 }
 
 .posts {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,7 +293,14 @@ Impresión (page-break, orphans, widows)
   width: 100%;
   border: 1px solid #37293B;
 }
-.posts .post {
+.posts__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.posts__content .post {
   box-sizing: border-box;
   width: 75%;
   height: 25em;
@@ -303,7 +311,7 @@ Impresión (page-break, orphans, widows)
   background-position: 50% 50%;
   background-size: cover;
 }
-.posts .post__content {
+.posts__content .post__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -314,13 +322,13 @@ Impresión (page-break, orphans, widows)
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
 }
-.posts .post__content__date {
+.posts__content .post__content__date {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 1em;
 }
-.posts .post__content__title {
+.posts__content .post__content__title {
   width: 70%;
   margin: 0 auto;
   display: flex;
@@ -328,12 +336,12 @@ Impresión (page-break, orphans, widows)
   align-items: center;
   color: #dadada;
 }
-.posts .post__content__title hr {
+.posts__content .post__content__title hr {
   margin-top: 0.4em;
   width: 100%;
   border: 1px solid #c4c4c4;
 }
-.posts .post:nth-of-type(1) {
+.posts__content .post:nth-of-type(1) {
   background-image: url(../imagenes/question.jpg);
 }
 
@@ -341,15 +349,31 @@ Impresión (page-break, orphans, widows)
   html {
     font-size: 69%;
   }
+
+  .posts__content .post {
+    width: 28em;
+    height: 28em;
+  }
 }
 @media only screen and (min-width: 425px) {
   html {
     font-size: 71%;
   }
+
+  .searchBar input {
+    max-width: 25em;
+  }
 }
 @media only screen and (min-width: 597px) {
   html {
     font-size: 73%;
+  }
+
+  .searchBar {
+    justify-content: flex-end;
+  }
+  .searchBar input {
+    margin-right: 5%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -358,7 +382,6 @@ Impresión (page-break, orphans, widows)
   }
 
   .header {
-    height: 15vh;
     padding: 0;
   }
   .header__box {
@@ -393,7 +416,7 @@ Impresión (page-break, orphans, widows)
     height: inherit;
   }
   .header__box .navbar ul li a {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 200;
   }
   .header__box .navbar ul li:hover {
@@ -403,8 +426,14 @@ Impresión (page-break, orphans, widows)
     border-bottom: 3px solid white;
   }
 
-  .hero {
-    height: 85vh;
+  .posts__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%);
+    justify-items: center;
+    width: 60em;
+  }
+  .footer__content form {
+    width: 60%;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -412,9 +441,6 @@ Impresión (page-break, orphans, widows)
     font-size: 75%;
   }
 
-  .header {
-    height: 14vh;
-  }
   .header__box {
     box-sizing: border-box;
     display: flex;
@@ -438,6 +464,17 @@ Impresión (page-break, orphans, widows)
     font-size: 1.4em;
   }
 
+  .searchBar input {
+    margin-right: 3%;
+  }
+
+  .posts__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 33%);
+    justify-items: center;
+    justify-items: center;
+    width: 83em;
+  }
   .footer__content {
     justify-content: space-between;
     padding: 5em 0 3em 0;
