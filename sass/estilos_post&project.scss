@@ -268,5 +268,12 @@
                 }
             }
         }
+    }
+    .footer{
+        &__content{
+            justify-content: space-between;
+            padding:5em 0 3em 0;
+            height: 100%;
+        }
     }   
 }

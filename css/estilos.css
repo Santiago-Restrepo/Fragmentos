@@ -167,11 +167,6 @@ Miscelánea (opacity, cursor, filters)
 Impresión (page-break, orphans, widows)
 */
 .whoIAm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3em 0;
   width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -179,31 +174,38 @@ Impresión (page-break, orphans, widows)
   color: #37293B;
 }
 .whoIAm__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 0;
+}
+.whoIAm__container__info {
   width: 70%;
 }
-.whoIAm__container-title {
+.whoIAm__container__info-title {
   display: flex;
   flex-direction: column;
   font-weight: bolder;
   margin-bottom: 2em;
 }
-.whoIAm__container-title hr {
+.whoIAm__container__info-title hr {
   margin-top: 0.4em;
   width: 35%;
   border: 1px solid #1E454E;
 }
-.whoIAm__container-image {
+.whoIAm__container__info-image {
   display: flex;
   justify-content: center;
   width: 100%;
   margin: 0 auto;
 }
-.whoIAm__container-image img {
+.whoIAm__container__info-image img {
   width: 100%;
   border-top-right-radius: 10em;
   border-bottom-left-radius: 10em;
 }
-.whoIAm__description {
+.whoIAm__container__description {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,22 +216,22 @@ Impresión (page-break, orphans, widows)
   height: fit-content;
   text-align: center;
 }
-.whoIAm__description-quote {
+.whoIAm__container__description-quote {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 2em;
 }
-.whoIAm__description-quote img {
+.whoIAm__container__description-quote img {
   width: 3em;
 }
-.whoIAm__description h4 {
+.whoIAm__container__description h4 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   font-weight: 400;
 }
-.whoIAm__description h4 hr {
+.whoIAm__container__description h4 hr {
   margin-top: 1em;
   width: 50%;
   border: 1px solid #1E454E;
@@ -543,7 +545,7 @@ Impresión (page-break, orphans, widows)
     font-size: 71%;
   }
 
-  .whoIAm__container-image img {
+  .whoIAm__container__info-image img {
     width: 85%;
   }
 
@@ -579,10 +581,10 @@ Impresión (page-break, orphans, widows)
     font-size: 73%;
   }
 
-  .whoIAm__container-image img {
+  .whoIAm__container__info-image img {
     width: 60%;
   }
-  .whoIAm__description h4 {
+  .whoIAm__container__description h4 {
     width: 70%;
   }
 
@@ -740,6 +742,30 @@ Impresión (page-break, orphans, widows)
   }
   .header__box .navbar ul li a {
     font-size: 1.4em;
+  }
+
+  .whoIAm {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+  .whoIAm__container {
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 2em 5em;
+  }
+  .whoIAm__container__info {
+    width: 25em;
+  }
+  .whoIAm__container__info-image img {
+    width: 100%;
+  }
+  .whoIAm__container__description {
+    justify-content: space-between;
+    margin: 0;
+    height: 20em;
+    width: 40%;
   }
 
   .footer__content {

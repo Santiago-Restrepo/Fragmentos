@@ -17,7 +17,7 @@
         font-size: 71%;
     }
 
-    .whoIAm__container-image{
+    .whoIAm__container__info-image{
         img{
            width: 85%;
         }   
@@ -60,15 +60,17 @@
     }
     .whoIAm{
         &__container{
-            &-image{
-                img{
-                    width: 60%;
+            &__info{
+                &-image{
+                    img{
+                        width: 60%;
+                    }
+                }   
+            }
+            &__description{
+                h4{
+                    width: 70%;
                 }
-            }   
-        }
-        &__description{
-            h4{
-                width: 70%;
             }
         }
     }
@@ -242,7 +244,34 @@
                 }
             }
         }
-    } 
+    }
+    
+    .whoIAm{
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        &__container{
+            box-sizing: border-box;
+            flex-direction: row;
+            align-items: flex-end;
+            padding: 2em 5em;
+            &__info{
+                width: 25em;
+                &-image{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            &__description{
+                justify-content: space-between;
+                margin: 0;
+                height: 20em;
+                width: 40%;
+    
+            }
+        }
+    }
     
     .footer{
         &__content{

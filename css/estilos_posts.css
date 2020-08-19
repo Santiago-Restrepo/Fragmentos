@@ -437,4 +437,10 @@ Impresión (page-break, orphans, widows)
   .header__box .navbar ul li a {
     font-size: 1.4em;
   }
+
+  .footer__content {
+    justify-content: space-between;
+    padding: 5em 0 3em 0;
+    height: 100%;
+  }
 }

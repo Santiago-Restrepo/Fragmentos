@@ -17,61 +17,63 @@ Impresión (page-break, orphans, widows)
 }
 
 .whoIAm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3em 0;
     width: 100vw;
     height: fit-content;
     color: $Color-secundario;
     &__container{
-        width: 70%;
-        &-title{
-            display: flex;
-            flex-direction: column;
-            font-weight: bolder;
-            margin-bottom: 2em;
-            hr{
-                @include titleHr(.4em,35%,$Color-primario);
-            }
-        }
-        &-image{
-            display: flex;
-            justify-content: center;
-            width: 100%; 
-            margin: 0 auto;
-            img{
-                width: 100%;
-                border-top-right-radius: 10em;
-                border-bottom-left-radius: 10em;
-            }
-        }
-    }
-    &__description{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 4em auto 0; 
-        width: 70%;
-        height: fit-content;
-        text-align: center;
-
-        &-quote{
-            width: fit-content;
-            margin-bottom: 2em;
-            img{
-                width: 3em;
+        justify-content: center;
+        padding: 3em 0;
+        &__info{
+            width: 70%;
+            &-title{
+                display: flex;
+                flex-direction: column;
+                font-weight: bolder;
+                margin-bottom: 2em;
+                hr{
+                    @include titleHr(.4em,35%,$Color-primario);
+                }
+            }
+            &-image{
+                display: flex;
+                justify-content: center;
+                width: 100%; 
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    border-top-right-radius: 10em;
+                    border-bottom-left-radius: 10em;
+                }
             }
         }
-
-        h4{
+        &__description{
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
-            font-weight: 400;
-            hr{
-                @include titleHr(1em,50%,$Color-primario);  
+            align-items: center;
+            margin: 4em auto 0; 
+            width: 70%;
+            height: fit-content;
+            text-align: center;
+    
+            &-quote{
+                width: fit-content;
+                margin-bottom: 2em;
+                img{
+                    width: 3em;
+                }
+            }
+    
+            h4{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                font-weight: 400;
+                hr{
+                    @include titleHr(1em,50%,$Color-primario);  
+                }
             }
         }
     }
