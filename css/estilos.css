@@ -757,7 +757,7 @@ Impresión (page-break, orphans, widows)
   .whoIAm__container {
     box-sizing: border-box;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     padding: 2em 5em;
   }
   .whoIAm__container__info {
