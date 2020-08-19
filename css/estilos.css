@@ -547,6 +547,7 @@ Impresión (page-break, orphans, widows)
 
   .whoIAm__container__info-image img {
     width: 85%;
+    height: auto;
   }
 
   .focuseye .recentProjects__content {
@@ -581,6 +582,9 @@ Impresión (page-break, orphans, widows)
     font-size: 73%;
   }
 
+  .whoIAm__container {
+    height: 100vh;
+  }
   .whoIAm__container__info-image img {
     width: 60%;
   }
