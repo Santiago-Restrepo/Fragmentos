@@ -207,24 +207,20 @@ Impresión (page-break, orphans, widows)
   margin-bottom: 2.5em;
 }
 .footer__content form {
-  display: flex;
   position: relative;
+  display: flex;
   width: 90%;
   margin-bottom: 3em;
 }
-.footer__content form input {
-  padding: auto 0;
-  padding-left: 1em;
+.footer__content form .emailInput {
+  padding: 0 1em;
   width: 100%;
   height: 3em;
+  overflow: scroll;
   border-radius: 2em;
   border: none;
 }
-.footer__content form input::placeholder {
-  font-family: "Rubik", sans-serif;
-  font-size: 1.1em;
-}
-.footer__content form button {
+.footer__content form .button {
   position: absolute;
   bottom: -15;
   right: 0;

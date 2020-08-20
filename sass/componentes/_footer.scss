@@ -38,23 +38,22 @@ Impresión (page-break, orphans, widows)
             }
         }
         form{
-            display: flex;
             position: relative;
+            display: flex;
             width: 90%;
             margin-bottom: 3em;
-            input{
-                padding: auto 0;
-                padding-left: 1em;
+            .emailInput{
+                padding: 0 1em;
                 width: 100%;
                 height: 3em;
                 border-radius: 2em;
                 border: none;
             }
-            input::placeholder{
-                font-family: $Fuente2;
-                font-size: 1.1em;
-            }
-            button{
+            // .emailInput{
+            //     font-family: $Fuente2;
+            //     font-size: 1.1em;
+            // }
+            .button{
                 position: absolute;
                 bottom: -15;
                 right: 0;
