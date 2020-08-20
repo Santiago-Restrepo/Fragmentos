@@ -717,9 +717,6 @@ Impresión (page-break, orphans, widows)
     font-size: 75%;
   }
 
-  .header {
-    height: 14vh;
-  }
   .header__box {
     box-sizing: border-box;
     display: flex;

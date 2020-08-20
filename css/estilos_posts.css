@@ -475,6 +475,7 @@ Impresión (page-break, orphans, widows)
     justify-items: center;
     width: 83em;
   }
+
   .footer__content {
     justify-content: space-between;
     padding: 5em 0 3em 0;

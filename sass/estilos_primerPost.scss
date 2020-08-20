@@ -1,3 +1,21 @@
+$break-mobile-M: 375px;
+$break-mobile-L: 425px;
+$break-mobile-tablet: 597px;
+$break-tablet: 768px;
+$break-laptop: 1024px;
+$break-laptop-L: 1440px;
+
+@media only screen and (min-width: $break-laptop){
+    .projectOrPost{        
+        &__image:nth-of-type(1){
+            margin: 0 auto 5em ;
+            width: 50%;
+        }
+    }
+  
+}
+
+
 .anotherProjectOrPost:nth-of-type(1) .anotherProjectOrPost__image{
     background-image: url(../imagenes/Rupatrupa.jpg);
 }
