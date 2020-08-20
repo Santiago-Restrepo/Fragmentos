@@ -244,7 +244,7 @@ img {
   width: 100px;
 }
 
-.mobile_structure, main .profile {
+.mobile_structure, main .profile__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -254,11 +254,14 @@ main {
   width: 100vw;
 }
 main .profile {
+  width: 100vw;
+}
+main .profile__container {
   box-sizing: border-box;
   width: 100%;
   padding: 3em;
 }
-main .profile__title, main .abilities__title, main .experience__title {
+main .profile__container__title, main .abilities__title, main .experience__title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -267,44 +270,44 @@ main .profile__title, main .abilities__title, main .experience__title {
   font-weight: 300;
   color: #337281;
 }
-main .profile__title hr, main .abilities__title hr, main .experience__title hr {
+main .profile__container__title hr, main .abilities__title hr, main .experience__title hr {
   margin-top: 0.4em;
   width: 100%;
   border: 1px solid #c4c4c4;
 }
-main .profile__aboutme {
+main .profile__container__aboutme {
   margin-bottom: 2.5em;
   text-align: center;
 }
-main .profile__aboutme__title, main .abilities__subtitle, main .experience__extra__title, main .experience__work__title, main .experience__education__title, main .profile__details__title {
+main .profile__container__aboutme__title, main .abilities__subtitle, main .experience__extra__title, main .experience__work__title, main .experience__education__title, main .profile__container__details__title {
   margin-bottom: 1.1em;
   font-weight: 600;
   color: #337281;
 }
-main .profile__aboutme__description {
+main .profile__container__aboutme__description {
   font-weight: 400;
   color: #89878A;
 }
-main .profile__image {
+main .profile__container__image {
   width: 80%;
   margin-bottom: 2em;
 }
-main .profile__image img {
+main .profile__container__image img {
   width: 100%;
-  border-radius: 10em;
+  border-radius: 30em;
 }
-main .profile__details {
+main .profile__container__details {
   width: 85%;
 }
-main .profile__details__title {
+main .profile__container__details__title {
   text-align: center;
 }
-main .profile__details__subtitle {
+main .profile__container__details__subtitle {
   margin-bottom: 1em;
   font-weight: lighter;
   color: #585858;
 }
-main .profile__details__subtitle2 {
+main .profile__container__details__subtitle2 {
   margin-bottom: 1em;
   font-weight: 100;
   color: #89878A;
@@ -400,7 +403,7 @@ main .abilities .ability__progress {
   position: relative;
   width: 50%;
   height: 100%;
-  border: 1px solid #c4c4c4;
+  border: 1px solid #767277;
 }
 main .abilities .ability__progress__value {
   position: absolute;
@@ -466,10 +469,36 @@ main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
   html {
     font-size: 71%;
   }
+
+  main .profile__container {
+    padding: 3em 8em;
+  }
+  main .experience {
+    padding: 5em;
+  }
+  main .abilities {
+    padding: 0;
+    width: 30em;
+    margin: 3em auto;
+  }
 }
 @media only screen and (min-width: 597px) {
   html {
     font-size: 73%;
+  }
+
+  main .profile__container {
+    padding: 3em 10em;
+  }
+  main .profile__container__image {
+    display: flex;
+    justify-content: center;
+  }
+  main .profile__container__image img {
+    width: 25em;
+  }
+  main .experience {
+    padding: 4em 7em;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -522,8 +551,135 @@ main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
     border-bottom: 3px solid white;
   }
 
+  main .profile {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  main .profile h4 {
+    font-size: 1.3em;
+  }
+  main .profile__container {
+    padding: 0;
+    display: grid;
+    grid-template-areas: "title title title" "description img details";
+    column-gap: 2em;
+    justify-items: center;
+    width: 58em;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+  main .profile__container__title, main .experience__title, main .abilities__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title;
+    margin-bottom: 2em;
+  }
+  main .profile__container__aboutme {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: description;
+    width: 18em;
+  }
+  main .profile__container__image {
+    grid-area: img;
+  }
+  main .profile__container__image img {
+    width: 18em;
+  }
+  main .profile__container__details {
+    width: 18em;
+    grid-area: details;
+  }
+  main .experience {
+    padding: 5em 11em 1 em;
+  }
+  main .experience__box {
+    grid-template-areas: "title subtitle" "date description";
+    column-gap: 5%;
+    margin-bottom: 5em;
+  }
+  main .experience__box__date {
+    align-self: flex-start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  main .abilities {
+    width: 55em;
+  }
+  main .abilities__knowledge, main .abilities__language, main .abilities__tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 48%);
+    column-gap: 2%;
+  }
+
   .footer__content form {
     width: 60%;
+  }
+  main .profile__container > .experience__box__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+  }
+  main .experience__box__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  main .experience__box__date {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  main .experience__box__subtitle {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+  main .profile__container > .experience__box__description {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  main .experience__box__description {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+}
+@media only screen and (min-width: 768px){
+  main .profile__container > .profile__container__title, main .profile__container > .experience__title, main .profile__container > .abilities__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+  }
+  main .profile__container__title, main .experience__title, main .abilities__title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  main .profile__container > .profile__container__aboutme {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  main .profile__container__aboutme {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+  main .profile__container__image {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  main .profile__container__details {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -552,6 +708,33 @@ main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
   }
   .header__box .navbar ul li a {
     font-size: 1.4em;
+  }
+
+  main .profile h4 {
+    font-size: 1.6em;
+  }
+  main .profile__container {
+    column-gap: 0;
+    width: 80em;
+  }
+  main .profile__container__title, main .experience__title, main .abilities__title {
+    margin-bottom: 2em;
+  }
+  main .profile__container__aboutme {
+    width: 23em;
+  }
+  main .profile__container__image img {
+    width: 23em;
+  }
+  main .profile__container__details {
+    width: 23em;
+  }
+  main .experience {
+    padding: 5em 18em 0.5em;
+  }
+  main .experience__box {
+    column-gap: 15%;
+    margin-bottom: 8em;
   }
 
   .footer__content {

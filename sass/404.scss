@@ -44,3 +44,14 @@ body{
         }
     }
 }
+
+
+@media only screen and (min-width: $break-mobile-tablet){
+    body{
+        main{
+            a{
+                width: 15em;
+            }
+        }
+    }
+}

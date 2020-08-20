@@ -281,7 +281,7 @@ Impresión (page-break, orphans, widows)
 .projectOrPost p, .moreProjectsOrPosts p, .projectOrPostlinks p {
   font-weight: 200;
   line-height: 1.5em;
-  color: #535353;
+  color: #444444;
 }
 
 .projectOrPostlinks {
@@ -436,7 +436,6 @@ Impresión (page-break, orphans, widows)
   }
 
   .header {
-    height: 15vh;
     padding: 0;
   }
   .header__box {
@@ -495,19 +494,12 @@ Impresión (page-break, orphans, widows)
     width: 23em;
     height: 33em;
   }
-
-  .hero {
-    height: 85vh;
-  }
 }
 @media only screen and (min-width: 1024px) {
   html {
     font-size: 75%;
   }
 
-  .header {
-    height: 14vh;
-  }
   .header__box {
     box-sizing: border-box;
     display: flex;

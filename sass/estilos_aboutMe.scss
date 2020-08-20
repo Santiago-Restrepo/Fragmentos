@@ -22,60 +22,64 @@ img{
 main{
     width: 100vw;
     .profile{
-        box-sizing: border-box;
-        @extend .mobile_structure;
-        width: 100%;
-        padding: 3em;
-        &__title{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 1em;
+        width: 100vw;
+        &__container{
+            box-sizing: border-box;
+            @extend .mobile_structure;
             width: 100%;
-            font-weight: 300;
-            color: #337281;
-            hr{
-                @include titleHr(.4em,100%,$Color-claro);  
-            }
-        }
-        &__aboutme{
-            margin-bottom: 2.5em;
-            text-align: center;
-            &__title{
-                margin-bottom: 1.1em;
-                font-weight: 600;
-                color: #337281;
-            }
-            &__description{
-                font-weight: 400;
-                color: #89878A;
-            }
-        }
-        &__image{
-            width: 80%;
-            margin-bottom: 2em;
+            padding: 3em;
             
-            img{
-                width: 100%;
-                border-radius: 10em;
-            }
-        }
-        &__details{
-            width: 85%;
             &__title{
-                @extend .profile__aboutme__title;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 1em;
+                width: 100%;
+                font-weight: 300;
+                color: #337281;
+                hr{
+                    @include titleHr(.4em,100%,$Color-claro);  
+                }
+            }
+            &__aboutme{
+                margin-bottom: 2.5em;
                 text-align: center;
+                &__title{
+                    margin-bottom: 1.1em;
+                    font-weight: 600;
+                    color: #337281;
+                }
+                &__description{
+                    font-weight: 400;
+                    color: #89878A;
+                }
             }
-            &__subtitle{
-                margin-bottom: 1em;
-                font-weight: lighter;
-                color: #585858;
-            }
-            &__subtitle2{
-                margin-bottom: 1em;
-                font-weight: 100;
-                color: #89878A;
+            &__image{
+                width: 80%;
+                margin-bottom: 2em;
                 
+                img{
+                    width: 100%;
+                    border-radius: 30em;
+                }
+            }
+            &__details{
+                width: 85%;
+                &__title{
+                    @extend .profile__container__aboutme__title;
+                    text-align: center;
+                }
+                &__subtitle{
+                    margin-bottom: 1em;
+                    font-weight: lighter;
+                    color: #585858;
+                }
+                &__subtitle2{
+                    margin-bottom: 1em;
+                    font-weight: 100;
+                    color: #89878A;
+                    
+                }
             }
         }
     }
@@ -85,18 +89,18 @@ main{
         padding: 3em;
         background-color: #141A17;
         &__title{
-            @extend .profile__title;
+            @extend .profile__container__title;
         }
         &__education{
             &__title{
-                @extend .profile__aboutme__title;
+                @extend .profile__container__aboutme__title;
             }
         }
         &__work{
             width: 100%;
             margin-bottom: 2.5em;
             &__title{
-                @extend .profile__aboutme__title;
+                @extend .profile__container__aboutme__title;
             }
             &__subtitle{
                 color: rgb(214, 214, 214);
@@ -106,7 +110,7 @@ main{
             width: 100%;
             margin-bottom: 2.5em;
             &__title{
-                @extend .profile__aboutme__title;
+                @extend .profile__container__aboutme__title;
             }
         }
         &__box{
@@ -153,10 +157,10 @@ main{
         width: 100%;
         padding: 3em;     
         &__title{
-            @extend .profile__title;
+            @extend .profile__container__title;
         }
         &__subtitle{
-            @extend .profile__aboutme__title;
+            @extend .profile__container__aboutme__title;
         }
         &__knowledge, &__language, &__tools{
             display: flex;
@@ -179,12 +183,12 @@ main{
                 position: relative;
                 width: 50%;
                 height: 100%;
-                border: 1px solid $Color-claro;
+                border: 1px solid #767277;
                 &__value{
                     position: absolute;
                     left: 0;
                     height: 100%;
-                    background-color: $Color-primario-oscuro;
+                    background-color: #03181D;
                 }
             }
         }
@@ -256,11 +260,44 @@ main{
     html{
         font-size: 71%;
     }
+    main{
+        .profile{
+            &__container{
+                padding: 3em 8em;
+            }
+        }
+        .experience{
+            padding: 5em;
+        }
+        .abilities{
+            padding: 0;
+            width: 30em;
+            margin: 3em auto;
+        }
+    }
 
 }
 @media only screen and (min-width: $break-mobile-tablet){
     html{
         font-size: 73%;
+    }
+
+    main{
+        .profile{
+            &__container{
+                padding: 3em 10em;
+                &__image{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 25em;
+                    }
+                }
+            }
+        }
+        .experience{
+            padding: 4em 7em;
+        }
     }
 }
 @media only screen and (min-width: $break-tablet){
@@ -311,10 +348,75 @@ main{
             .active__page{
                 border-bottom: 3px solid white;
             }
-
+            
         }
     }
 
+    main{
+        .profile{
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            h4{
+                font-size:1.3em ;
+            }
+            &__container{
+                padding: 0;
+                display: grid;
+                grid-template-areas: "title title title"
+                "description img details";
+                column-gap: 2em;
+                justify-items: center;
+                width: 58em;
+                height: fit-content;
+                margin: 0 auto;
+                &__title{
+                    grid-area: title;
+                    margin-bottom: 2em;
+                }
+                &__aboutme{
+                    grid-area: description;
+                    width: 18em;
+                }
+                &__image{
+                    grid-area: img;
+                    img{
+                        width: 18em;
+                    }
+                }
+                &__details{
+                    width: 18em;
+                    grid-area: details;
+                }
+                
+            }    
+        }
+        .experience{
+            padding: 5em 11em 1 em;
+            &__box{
+                grid-template-areas: "title subtitle"
+                                     "date description";
+                column-gap: 5%;
+                margin-bottom: 5em;
+                &__date{
+                    align-self: flex-start;
+                    width: fit-content;
+
+                }
+            }
+        }
+        .abilities{
+            width: 55em;
+            &__knowledge, &__language, &__tools{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 48%);
+                column-gap:2% ;
+            }
+        }
+    }
+    
     .footer{
         &__content{
             form{
@@ -322,7 +424,7 @@ main{
             }
         }
     }
-
+    
 }
 
 @media only screen and (min-width: $break-laptop){
@@ -352,6 +454,38 @@ main{
                     }
                     
                 }
+            }
+        }
+    }
+    main{
+        .profile{
+            h4{
+                font-size: 1.6em;
+            }
+            &__container{
+                column-gap: 0;
+                width: 80em;
+                &__title{
+                    margin-bottom: 2em;
+                }
+                &__aboutme{
+                    width: 23em;
+                }
+                &__image{
+                    img{
+                        width: 23em;
+                    }
+                }
+                &__details{
+                    width: 23em;
+                }
+            }    
+        }
+        .experience{
+            padding: 5em 18em .5em;
+            &__box{
+                column-gap: 15%;
+                margin-bottom: 8em;
             }
         }
     }
