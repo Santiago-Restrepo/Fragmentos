@@ -88,7 +88,7 @@
     }
     .weeklyMessage{
         &__box{
-            width: 60%;
+            width: 30em;
         }
     }
 }
@@ -198,7 +198,7 @@
     }
     .weeklyMessage{
         &__box{
-            height: 80%;
+            height: 30em;
         }
     }
     .footer{
@@ -284,7 +284,8 @@
 
     .weeklyMessage{
         &__box{
-            width: 50%;
+            width: 55em;
+            height: 35em;
         }
     }
     
