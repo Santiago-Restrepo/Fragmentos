@@ -189,7 +189,7 @@ Impresión (page-break, orphans, widows)
   display: flex;
   flex-direction: column;
   font-weight: bolder;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .whoIAm__container__info-title hr {
   margin-top: 0.4em;

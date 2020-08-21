@@ -32,7 +32,7 @@ Impresión (page-break, orphans, widows)
                 display: flex;
                 flex-direction: column;
                 font-weight: bolder;
-                margin-bottom: 2em;
+                margin-bottom: 1em;
                 hr{
                     @include titleHr(.4em,35%,$Color-primario);
                 }
