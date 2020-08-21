@@ -55,11 +55,11 @@ main{
                 }
             }
             &__image{
-                width: 80%;
+                width: fit-content;
                 margin-bottom: 2em;
                 
                 img{
-                    width: 100%;
+                    width: 22em;
                     border-radius: 30em;
                 }
             }
