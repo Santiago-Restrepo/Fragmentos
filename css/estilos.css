@@ -274,6 +274,10 @@ Impresión (page-break, orphans, widows)
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  align-self: flex-end;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: end;
   color: white;
   margin-bottom: 2em;
