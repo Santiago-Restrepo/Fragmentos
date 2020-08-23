@@ -206,6 +206,7 @@ Impresión (page-break, orphans, widows)
 }
 .whoIAm__container__info-image img {
   width: 22em;
+  height: 16.5em;
   border-top-right-radius: 10em;
   border-bottom-left-radius: 10em;
 }

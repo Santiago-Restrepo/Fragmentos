@@ -9,7 +9,7 @@
 @media only screen and (min-width: $break-mobile-M){
     html{
         font-size: 69%;
-    }    
+    }   
 }
 
 @media only screen and (min-width: $break-mobile-L){
@@ -17,13 +17,13 @@
         font-size: 71%;
     }
 
+    
     .whoIAm__container__info-image{
         img{
-           width: 25em;
-           height: auto;
+        width: 25em;
+        height: auto;
         }   
     }
-
     .focuseye{
         .recentProjects{
             &__content{
