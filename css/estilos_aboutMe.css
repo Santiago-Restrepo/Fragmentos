@@ -172,6 +172,7 @@ Impresión (page-break, orphans, widows)
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
@@ -182,8 +183,7 @@ Impresión (page-break, orphans, widows)
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3em;
-  width: 100%;
+  width: 90%;
   height: 80%;
   text-align: center;
   color: white;
@@ -212,8 +212,8 @@ Impresión (page-break, orphans, widows)
   position: absolute;
   bottom: -15;
   right: 0;
-  width: 30%;
-  height: 70%;
+  width: 7em;
+  height: 2em;
   color: white;
   border: none;
   border-radius: 1em;
