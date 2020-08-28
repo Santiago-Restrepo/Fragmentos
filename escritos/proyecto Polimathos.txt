@@ -1,0 +1,39 @@
+Polimathos fue el proyecto final para una materia de mi universidad, semiótica informática; materia en la cual tuve mi primer acercamiento universitario al desarrollo web. En ella pude ver desde los conceptos más básicos del diseño UX y UI hasta la implementación de los mismos, e incluso más avanzados, dentro un proyecto programado en su totalidad con HTML, CSS y JavaScript puros.
+
+Este proyecto no fue realizado sólo por mi, sino por otros 3 compañeros más, con los cuales evolucionamos el proyecto desde el inicio con el proceso creativo hasta la versión final de producción.
+
+Polimathos es una plataforma tipo red social con perfiles con diferentes aspectos, dependiendo del ámbito en el que se desenvuelven. Además, secciones tipo foro para discutir y colaborar sobre diversos temas. No nos enfocamos en la especialización sino en aprender de TODO!
+
+Polimathos tiene como objetivo principal dar un mensaje: "hay tanto que aprender, hay tanto que enseñar, hay tanto que crear. Especializarse en un solo aspecto es limitar esta infinidad de maravillas."
+
+En polimathos le abrimos las puertas a programadores, diseñadores, artistas y creadores de contenido. En pocas palabras, a todx aquel que anhele conocer más del hermoso mundo de la diversidad.
+
+
+Polima.. ¿Qué?
+
+Un polímata es un individuo que posee conocimientos que abarcan diversas disciplinas, de ahí la inspiración para nuestro nombre y logo.
+Uno de los más reconocidos polímatas fue Leonardo Da Vinci, el cual fue a la vez pintor, anatomista, arquitecto, paleontólogo, artista, botánico, científico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista. suena loco pero increíble, lo sé jajaja.
+
+
+Detalles del proyecto
+
+
+Comenzamos con la teoría; teoría del color, teoría del signo, diseño UX, tree testings, card sorting y user stories. 
+
+Luego llegó la implementación de todos estos conocimientos realizando una landing page de nuestro proyecto en la cual usamos la librería Bootstrap.
+
+Para finalizar comenzamos con el diseño de nuestro proyecto, primero en sketch, luego un mockup, después un wireframe y por último los prototipos funcionales en Adobe XD
+
+
+Luego de tener el diseño nos pusimos a la tarea de programar el prototipo tal cual lo hicimos. El tiempo y nuestra dedicación se fueron encargando de terminar nuestra red social, completamente funcional.
+
+
+Fue un gran proyecto en el cual se pueden ver reflejados los conocimientos que poseíamos en el momento, tanto de diseño como de programación. 
+
+
+
+
+
+ 
+
+
