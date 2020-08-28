@@ -50,6 +50,18 @@ h6 {
   font-size: 1.2em;
 }
 
+.contact__button {
+  position: fixed;
+  top: 50%;
+  right: 5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  background-color: #FF3644;
+  color: white;
+}
+
 /*
 Posicionamiento (position, top, right, bottom, left, z-index)
 Composición (float, clear, display, box-sizing, visibility, overflow, clip)
@@ -246,11 +258,14 @@ Impresión (page-break, orphans, widows)
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 1.5em;
 }
 .projectOrPost__title hr {
   margin-top: 0.4em;
-  width: 45%;
+  width: 50%;
   border: 1px solid #FF3644;
 }
 .projectOrPost__image {

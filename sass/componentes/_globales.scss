@@ -65,3 +65,13 @@ h5{
 h6{
     font-size: 1.2em;
 }
+
+.contact__button{
+    position: fixed;
+    top: 50%;
+    right: 5;
+    width: fit-content;
+    text-decoration:none;
+    background-color: #FF3644;
+    color: white;
+}
