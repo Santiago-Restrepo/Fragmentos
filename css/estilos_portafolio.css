@@ -119,7 +119,6 @@ Impresión (page-break, orphans, widows)
 .header__box .navbar {
   position: fixed;
   background-color: rgba(55, 41, 59, 0.9);
-  z-index: 3;
   top: 0;
   left: -100vw;
   bottom: 0;
@@ -338,12 +337,17 @@ Impresión (page-break, orphans, widows)
   height: 80%;
 }
 .portfolio__projects__project__content__image {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: 0.5s;
+}
+.portfolio__projects__project__content__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .portfolio__projects__project__content__details {
   box-sizing: border-box;
@@ -410,12 +414,6 @@ Impresión (page-break, orphans, widows)
 }
 .portfolio__projects__project__clickHere__content:hover .portfolio__projects__project__clickHere__clickHere {
   display: none;
-}
-.portfolio__projects__project:nth-of-type(1) .portfolio__projects__project__content__image {
-  background-image: url(../imagenes/Rupatrupa.jpg);
-}
-.portfolio__projects__project:nth-of-type(2) .portfolio__projects__project__content__image {
-  background-image: url(../imagenes/PolimathosBLANCO.png);
 }
 
 @media only screen and (min-width: 375px) {
@@ -517,11 +515,11 @@ Impresión (page-break, orphans, widows)
     grid-template-columns: repeat(auto-fill, 50%);
     justify-items: center;
     margin: 0 auto;
-    margin-bottom: 3em;
     width: 60em;
   }
   .portfolio__projects__project {
     margin: 0;
+    margin-bottom: 3em;
   }
 
   .footer__content form {

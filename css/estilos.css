@@ -108,7 +108,6 @@ Impresión (page-break, orphans, widows)
 .header__box .navbar {
   position: fixed;
   background-color: rgba(55, 41, 59, 0.9);
-  z-index: 3;
   top: 0;
   left: -100vw;
   bottom: 0;
