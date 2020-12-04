@@ -83,16 +83,17 @@ Impresión (page-break, orphans, widows)
   width: 100vw;
   height: 13vh;
   padding: 2em 0;
-  background-color: #12021a;
+  background-color: #08010c;
 }
 .header__box {
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: flex-end;
   width: 100%;
   padding-bottom: 2em;
   margin: 0.1em 2em;
   border-bottom: 2px solid #bc6ff1;
-  background-color: #12021a;
+  background-color: #08010c;
 }
 .header__box__title {
   font-style: italic;
@@ -113,7 +114,7 @@ Impresión (page-break, orphans, widows)
 .header__box .navbar {
   z-index: 1;
   position: fixed;
-  background-color: #52057b;
+  background-color: #bd6ff1ef;
   top: 0;
   left: -100vw;
   bottom: 0;
@@ -135,7 +136,7 @@ Impresión (page-break, orphans, widows)
   margin-bottom: 1em;
   width: 90%;
   height: 5em;
-  background-color: #03181dab;
+  background-color: #15031dab;
   border-radius: 1px;
 }
 .header__box .navbar ul li a {
@@ -160,7 +161,7 @@ Impresión (page-break, orphans, widows)
   width: 100vw;
   height: 87vh;
   color: white;
-  background-image: url("../imagenes/background.png");
+  background-image: url("../imagenes/background3.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -194,7 +195,7 @@ Impresión (page-break, orphans, widows)
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: #12021a;
+  background-color: #08010c;
 }
 .footer__content {
   box-sizing: border-box;
@@ -273,7 +274,7 @@ Impresión (page-break, orphans, widows)
 .projectOrPost__title hr {
   margin-top: 0.4em;
   width: 50%;
-  border: 1px solid #FF3644;
+  border: 1px solid #892cdc;
 }
 .projectOrPost__image {
   margin-bottom: 2.5em;
@@ -293,7 +294,7 @@ Impresión (page-break, orphans, widows)
   width: 3%;
   height: 2em;
   border: none;
-  border-right: 2px solid #FF3644;
+  border-right: 2px solid #892cdc;
 }
 .projectOrPost p, .moreProjectsOrPosts p, .projectOrPostlinks p {
   font-weight: 200;
@@ -313,7 +314,7 @@ Impresión (page-break, orphans, widows)
 .projectOrPostlinks__title hr {
   margin-top: 0.4em;
   width: 85%;
-  border: 1px solid #FF3644;
+  border: 1px solid #892cdc;
 }
 .projectOrPostlinks__link {
   display: flex;
@@ -391,8 +392,8 @@ Impresión (page-break, orphans, widows)
   width: -moz-fit-content;
   width: fit-content;
   height: 3em;
-  color: #bc6ff1;
-  background-color: #41065f;
+  color: #ecd6f8;
+  background-color: #bc6ff1;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
@@ -421,7 +422,7 @@ Impresión (page-break, orphans, widows)
   font-weight: 500;
   color: white;
   border-radius: 1em;
-  background-color: #05242c;
+  background-color: #12021a;
 }
 
 @media only screen and (min-width: 375px) {
@@ -461,7 +462,7 @@ Impresión (page-break, orphans, widows)
     margin: 0;
     padding: 0;
     border-bottom: none;
-    background-color: #41065f;
+    background-color: #08010c;
   }
   .header__box .hamburguer__menu {
     display: none;
@@ -472,7 +473,7 @@ Impresión (page-break, orphans, widows)
   .header__box .navbar {
     position: relative;
     left: 0;
-    background-color: #41065f;
+    background-color: #08010c;
     height: 100%;
   }
   .header__box .navbar ul {
@@ -491,7 +492,7 @@ Impresión (page-break, orphans, widows)
     font-weight: 200;
   }
   .header__box .navbar ul li:hover {
-    background-color: #010a0c;
+    background-color: #12021a;
   }
   .header__box .active__page {
     border-bottom: 3px solid white;

@@ -22,7 +22,7 @@
         width: fit-content;
         margin-bottom: 1.5em;
         hr{
-            @include titleHr(.4em,50%,$Color-variacion);  
+            @include titleHr(.4em,50%,$Color-primario-claro);  
         }
     }
     &__image{
@@ -42,7 +42,7 @@
             width: 3%;
             height: 2em;
             border: none;
-            border-right: 2px solid $Color-variacion;
+            border-right: 2px solid $Color-primario-claro;
         }
     }
     p{  
@@ -60,7 +60,7 @@
         align-items: flex-end;
         margin-bottom: 1.5em;
         hr{
-            @include titleHr(.4em,85%,$Color-variacion);  
+            @include titleHr(.4em,85%,$Color-primario-claro);  
         }
     }
     &__link{
@@ -128,8 +128,8 @@
                 padding: 0 1.5em;
                 width: fit-content;
                 height: 3em;
-                color: $Color-claro;
-                background-color: $Color-primario-oscuro;
+                color: $Color-blanco;
+                background-color: $Color-claro;
                 clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
                 h5{
                     font-weight: 500;
@@ -162,7 +162,7 @@
                 font-weight: 500;
                 color: white;
                 border-radius: 1em;
-                background-color: #05242c;
+                background-color: $Color-oscuro;
     
             }
         }
@@ -211,7 +211,7 @@
             margin: 0;
             padding: 0;
             border-bottom: none;
-            background-color: $Color-primario-oscuro;
+            background-color: $Color-negro;
             .hamburguer__menu{
                 display: none;
             }
@@ -221,7 +221,7 @@
             .navbar{
                 position: relative;
                 left: 0;
-                background-color: $Color-primario-oscuro;
+                background-color: $Color-negro;
                 height: 100%;
                 ul{
                     display: grid;
@@ -239,7 +239,7 @@
                         }
                     }
                     li:hover{
-                        background-color: #010a0c;
+                        background-color: $Color-oscuro;
                     }
                 }
             }

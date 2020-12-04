@@ -29,14 +29,13 @@ Impresión (page-break, orphans, widows)
     margin-bottom: 3em;
     width: 100vw;
     height: 7em;
-    background-color: #060e10;
     input{
         padding-left: 4em;
         width: 80%;
         height: 50%;
         font-size: 1.2em;
         color: $Color-claro;
-        background-color: $Color-primario-oscuro;
+        background-color: $Color-gris-claro;
         background-image: url(../imagenes/search.svg);
         background-repeat: no-repeat;
         background-position: 5% 50%;
@@ -60,7 +59,7 @@ Impresión (page-break, orphans, widows)
         align-items: center;
         margin-bottom: 2em;
         hr{
-            @include titleHr(.4em,100%,$Color-secundario);  
+            @include titleHr(.4em,100%,$Color-claro);  
         }
     }
     &__content{
@@ -166,7 +165,7 @@ Impresión (page-break, orphans, widows)
             margin: 0;
             padding: 0;
             border-bottom: none;
-            background-color: $Color-primario-oscuro;
+            background-color: $Color-negro;
             .hamburguer__menu{
                 display: none;
             }
@@ -176,7 +175,7 @@ Impresión (page-break, orphans, widows)
             .navbar{
                 position: relative;
                 left: 0;
-                background-color: $Color-primario-oscuro;
+                background-color: $Color-negro;
                 height: 100%;
                 ul{
                     display: grid;
@@ -194,7 +193,7 @@ Impresión (page-break, orphans, widows)
                         }
                     }
                     li:hover{
-                        background-color: #010a0c;
+                        background-color: $Color-oscuro;
                     }
                 }
             }

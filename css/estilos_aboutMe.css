@@ -83,16 +83,17 @@ Impresión (page-break, orphans, widows)
   width: 100vw;
   height: 13vh;
   padding: 2em 0;
-  background-color: #12021a;
+  background-color: #08010c;
 }
 .header__box {
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: flex-end;
   width: 100%;
   padding-bottom: 2em;
   margin: 0.1em 2em;
   border-bottom: 2px solid #bc6ff1;
-  background-color: #12021a;
+  background-color: #08010c;
 }
 .header__box__title {
   font-style: italic;
@@ -113,7 +114,7 @@ Impresión (page-break, orphans, widows)
 .header__box .navbar {
   z-index: 1;
   position: fixed;
-  background-color: #52057b;
+  background-color: #bd6ff1ef;
   top: 0;
   left: -100vw;
   bottom: 0;
@@ -135,7 +136,7 @@ Impresión (page-break, orphans, widows)
   margin-bottom: 1em;
   width: 90%;
   height: 5em;
-  background-color: #03181dab;
+  background-color: #15031dab;
   border-radius: 1px;
 }
 .header__box .navbar ul li a {
@@ -160,7 +161,7 @@ Impresión (page-break, orphans, widows)
   width: 100vw;
   height: 87vh;
   color: white;
-  background-image: url("../imagenes/background.png");
+  background-image: url("../imagenes/background3.png");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -194,7 +195,7 @@ Impresión (page-break, orphans, widows)
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: #12021a;
+  background-color: #08010c;
 }
 .footer__content {
   box-sizing: border-box;
@@ -282,7 +283,7 @@ main .profile__container__title, main .abilities__title, main .experience__title
   margin-bottom: 1em;
   width: 100%;
   font-weight: 300;
-  color: #337281;
+  color: #41065f;
 }
 main .profile__container__title hr, main .abilities__title hr, main .experience__title hr {
   margin-top: 0.4em;
@@ -296,11 +297,11 @@ main .profile__container__aboutme {
 main .profile__container__aboutme__title, main .abilities__subtitle, main .experience__extra__title, main .experience__work__title, main .experience__education__title, main .profile__container__details__title {
   margin-bottom: 1.1em;
   font-weight: 600;
-  color: #337281;
+  color: #41065f;
 }
 main .profile__container__aboutme__description {
   font-weight: 400;
-  color: #89878A;
+  color: #575558;
 }
 main .profile__container__image {
   width: -webkit-fit-content;
@@ -332,7 +333,10 @@ main .experience {
   box-sizing: border-box;
   width: 100%;
   padding: 3em;
-  background-color: #141A17;
+  background-color: #08010c;
+}
+main .experience__title {
+  color: #892cdc;
 }
 main .experience__work {
   width: 100%;
@@ -357,7 +361,7 @@ main .experience__box__title {
   -ms-grid-column: 1;
   grid-area: title;
   width: 12em;
-  color: #d6d6d6;
+  color: #ecd6f8;
 }
 main .experience__box__date {
   -ms-grid-row: 1;
@@ -385,7 +389,7 @@ main .experience__box__description {
   -ms-grid-column-span: 2;
   grid-area: description;
   font-weight: 400;
-  color: #707070;
+  color: #575558;
 }
 main .experience__box__description hr {
   margin-top: 2em;
@@ -419,13 +423,13 @@ main .abilities .ability__progress {
   position: relative;
   width: 50%;
   height: 100%;
-  border: 1px solid #767277;
+  border: 1px solid #575558;
 }
 main .abilities .ability__progress__value {
   position: absolute;
   left: 0;
   height: 100%;
-  background-color: #03181D;
+  background-color: #FFDE5F;
 }
 main .abilities__knowledge .ability:nth-of-type(1) .ability__progress__value {
   width: 50%;
@@ -531,7 +535,7 @@ main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
     margin: 0;
     padding: 0;
     border-bottom: none;
-    background-color: #41065f;
+    background-color: #08010c;
   }
   .header__box .hamburguer__menu {
     display: none;
@@ -542,7 +546,7 @@ main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
   .header__box .navbar {
     position: relative;
     left: 0;
-    background-color: #41065f;
+    background-color: #08010c;
     height: 100%;
   }
   .header__box .navbar ul {
@@ -561,7 +565,7 @@ main .abilities__tools .ability:nth-of-type(6) .ability__progress__value {
     font-weight: 200;
   }
   .header__box .navbar ul li:hover {
-    background-color: #010a0c;
+    background-color: #12021a;
   }
   .header__box .active__page {
     border-bottom: 3px solid white;
