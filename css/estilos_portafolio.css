@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  background-color: #f3ecf7;
+  background-color: #efebf1;
 }
 
 h1, h2, h3 {
@@ -125,7 +125,7 @@ Impresión (page-break, orphans, widows)
 .header__box .navbar {
   z-index: 1;
   position: fixed;
-  background-color: #bd6ff1ef;
+  background-color: #ddbbf3ef;
   top: 0;
   left: -100vw;
   bottom: 0;
@@ -393,7 +393,7 @@ Impresión (page-break, orphans, widows)
   height: 4em;
   text-decoration: none;
   font-weight: 500;
-  color: #f3ecf7;
+  color: #efebf1;
   background-color: #12021a;
 }
 .portfolio__projects__project__content:hover .portfolio__projects__project__content__image {

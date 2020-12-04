@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #f3ecf7;
+  background-color: #efebf1;
 }
 
 h1, h2, h3 {
@@ -114,7 +114,7 @@ Impresión (page-break, orphans, widows)
 .header__box .navbar {
   z-index: 1;
   position: fixed;
-  background-color: #bd6ff1ef;
+  background-color: #ddbbf3ef;
   top: 0;
   left: -100vw;
   bottom: 0;
@@ -362,7 +362,7 @@ main .experience__box__title {
   -ms-grid-column: 1;
   grid-area: title;
   width: 12em;
-  color: #f3ecf7;
+  color: #efebf1;
 }
 main .experience__box__date {
   -ms-grid-row: 1;
