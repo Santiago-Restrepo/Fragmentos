@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 $Fuente1: 'Lato', sans-serif;
 $Fuente2: 'Rubik', sans-serif;
-$Color-primario: #1E454E;
-$Color-primario-oscuro: #03181D;
-$Color-claro: #c4c4c4;
-$Color-secundario: #37293B;
-$Color-oscuro: #000E3B;
+$Color-primario:  #52057b;
+$Color-blanco:  #ecd6f8;
+$Color-primario-oscuro:#41065f;
+$Color-primario-claro: #892cdc;
+$Color-claro: #bc6ff1;
+$Color-secundario: #FFDE5F;
+$Color-oscuro: #12021a;
+$Color-negro: #08010c;
+
 $Color-variacion: #FF3644;
 $Color-gris: #575558;
 $break-mobile-M: 375px;
@@ -27,6 +31,10 @@ html{
     position: relative;
     width: 100vw;
     overflow-x: hidden;
+}
+
+body{
+    background-color: $Color-blanco;
 }
 
 h1,h2,h3{

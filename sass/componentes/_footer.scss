@@ -17,7 +17,8 @@ Impresión (page-break, orphans, widows)
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(0deg, rgba(6,14,16,1) 0%, rgba(6,14,16,1) 15%, rgba(30,69,78,1) 100%);
+    background-color: $Color-oscuro;
+    // background: linear-gradient(0deg, #060e10 0%, rgba(6,14,16,1) 15%, rgba(30,69,78,1) 100%);
     &__content{
         box-sizing: border-box;
         display: flex;

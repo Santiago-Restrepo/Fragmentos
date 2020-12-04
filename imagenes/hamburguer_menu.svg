@@ -1,6 +1,1 @@
-<svg id="Hamburguer_menu" data-name="Hamburguer menu" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
-  <circle id="Elipse_1" data-name="Elipse 1" cx="19" cy="19" r="19" fill="#03181d"/>
-  <rect id="Rectángulo_30" data-name="Rectángulo 30" width="24" height="5" rx="2.5" transform="translate(7 9.5)" fill="#fff"/>
-  <rect id="Rectángulo_31" data-name="Rectángulo 31" width="24" height="5" rx="2.5" transform="translate(7 16.5)" fill="#fff"/>
-  <rect id="Rectángulo_32" data-name="Rectángulo 32" width="24" height="5" rx="2.5" transform="translate(7 23.5)" fill="#fff"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"><circle cx="19" cy="19" r="19" fill="#08010c"/><rect width="24" height="5" rx="2.5" transform="translate(7 9.5)" fill="#fff"/><rect width="24" height="5" rx="2.5" transform="translate(7 16.5)" fill="#fff"/><rect width="24" height="5" rx="2.5" transform="translate(7 23.5)" fill="#fff"/></svg>

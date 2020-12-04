@@ -25,6 +25,10 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  background-color: #ecd6f8;
+}
+
 h1, h2, h3 {
   font-family: "Lato", sans-serif;
 }
@@ -90,7 +94,7 @@ Impresión (page-break, orphans, widows)
   width: 100vw;
   height: 13vh;
   padding: 2em 0;
-  background-color: #1E454E;
+  background-color: #12021a;
 }
 .header__box {
   display: flex;
@@ -98,7 +102,8 @@ Impresión (page-break, orphans, widows)
   width: 100%;
   padding-bottom: 2em;
   margin: 0.1em 2em;
-  border-bottom: 2px solid #c4c4c4;
+  border-bottom: 2px solid #bc6ff1;
+  background-color: #12021a;
 }
 .header__box__title {
   font-style: italic;
@@ -111,14 +116,15 @@ Impresión (page-break, orphans, widows)
 }
 .header__box .hamburguer__menu img {
   position: fixed;
-  top: 5;
-  left: 5;
+  top: 10;
+  left: 10;
   z-index: 4;
   width: 5em;
 }
 .header__box .navbar {
+  z-index: 1;
   position: fixed;
-  background-color: rgba(55, 41, 59, 0.9);
+  background-color: #52057b;
   top: 0;
   left: -100vw;
   bottom: 0;
@@ -165,7 +171,9 @@ Impresión (page-break, orphans, widows)
   width: 100vw;
   height: 87vh;
   color: white;
-  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
+  background-image: url("../imagenes/background.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 .hero__title {
   text-align: center;
@@ -197,7 +205,7 @@ Impresión (page-break, orphans, widows)
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
+  background-color: #12021a;
 }
 .footer__content {
   box-sizing: border-box;
@@ -239,7 +247,7 @@ Impresión (page-break, orphans, widows)
   color: white;
   border: none;
   border-radius: 1em;
-  background-color: #03181D;
+  background-color: #41065f;
 }
 .footer__content .socialMedia {
   display: grid;
@@ -264,15 +272,15 @@ Impresión (page-break, orphans, widows)
   margin-bottom: 3em;
   width: 100vw;
   height: 7em;
-  background-color: #060e10;
+  background-color: #575558;
 }
 .searchBar input {
   padding-left: 4em;
   width: 80%;
   height: 50%;
   font-size: 1.2em;
-  color: #c4c4c4;
-  background-color: #03181D;
+  color: #bc6ff1;
+  background-color: #41065f;
   background-image: url(../imagenes/search.svg);
   background-repeat: no-repeat;
   background-position: 5% 50%;
@@ -297,7 +305,7 @@ Impresión (page-break, orphans, widows)
 .portfolio__title hr {
   margin-top: 0.4em;
   width: 100%;
-  border: 1px solid #37293B;
+  border: 1px solid #FFDE5F;
 }
 .portfolio__projects {
   display: flex;
@@ -373,7 +381,7 @@ Impresión (page-break, orphans, widows)
   height: 65%;
 }
 .portfolio__projects__project__content__details-description h4 {
-  color: #37293B;
+  color: #FFDE5F;
   font-weight: normal;
 }
 .portfolio__projects__project__content__details-button {
@@ -385,7 +393,7 @@ Impresión (page-break, orphans, widows)
   text-decoration: none;
   font-weight: 500;
   color: white;
-  background-color: #37293B;
+  background-color: #FFDE5F;
 }
 .portfolio__projects__project__content:hover .portfolio__projects__project__content__image {
   opacity: 0.7;
@@ -406,7 +414,7 @@ Impresión (page-break, orphans, widows)
   width: 35%;
   height: 13%;
   color: white;
-  background-color: #37293B;
+  background-color: #FFDE5F;
   border-radius: 3em;
 }
 .portfolio__projects__project__clickHere h6 {
@@ -467,7 +475,7 @@ Impresión (page-break, orphans, widows)
     margin: 0;
     padding: 0;
     border-bottom: none;
-    background-color: #03181D;
+    background-color: #12021a;
   }
   .header__box .hamburguer__menu {
     display: none;
@@ -478,7 +486,7 @@ Impresión (page-break, orphans, widows)
   .header__box .navbar {
     position: relative;
     left: 0;
-    background-color: #03181D;
+    background-color: #12021a;
     height: 100%;
   }
   .header__box .navbar ul {
@@ -497,7 +505,7 @@ Impresión (page-break, orphans, widows)
     font-weight: 200;
   }
   .header__box .navbar ul li:hover {
-    background-color: #010a0c;
+    background-color: #52057b;
   }
   .header__box .active__page {
     border-bottom: 3px solid white;

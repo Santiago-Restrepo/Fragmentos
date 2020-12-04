@@ -16,7 +16,7 @@ Impresión (page-break, orphans, widows)
     width: 100vw;
     height: 13vh;
     padding: 2em 0; 
-    background-color: #1E454E;
+    background-color: $Color-oscuro;
     &__box{
         display: flex;
         align-items: flex-end;
@@ -24,6 +24,7 @@ Impresión (page-break, orphans, widows)
         padding-bottom: 2em;
         margin: .1em 2em;
         border-bottom: 2px solid $Color-claro;
+        background-color: $Color-oscuro;
         &__title{
             font-style: italic;
             font-size: 3.5em;
@@ -34,15 +35,16 @@ Impresión (page-break, orphans, widows)
             width: 25%;
             img{
                 position: fixed;
-                top: 5;
-                left: 5;
+                top: 10;
+                left: 10;
                 z-index: 4;
                 width: 5em;
             }
         }
         .navbar{
+            z-index: 1;
             position: fixed;
-            background-color: rgb(55, 41, 59,.9);
+            background-color: $Color-primario;
             top: 0;
             left: -100vw;
             bottom: 0;

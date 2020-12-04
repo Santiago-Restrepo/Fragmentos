@@ -19,7 +19,6 @@ Impresión (page-break, orphans, widows)
 .whoIAm{
     width: 100vw;
     height: fit-content;
-    color: $Color-secundario;
     &__container{
         display: flex;
         flex-direction: column;
@@ -33,8 +32,9 @@ Impresión (page-break, orphans, widows)
                 flex-direction: column;
                 font-weight: bolder;
                 margin-bottom: 1em;
+                color: $Color-primario-oscuro;
                 hr{
-                    @include titleHr(.4em,35%,$Color-primario);
+                    @include titleHr(.4em,35%,$Color-claro);
                 }
             }
             &-image{
@@ -58,7 +58,7 @@ Impresión (page-break, orphans, widows)
             width: 70%;
             height: fit-content;
             text-align: center;
-    
+            
             &-quote{
                 width: fit-content;
                 margin-bottom: 2em;
@@ -66,14 +66,15 @@ Impresión (page-break, orphans, widows)
                     width: 3em;
                 }
             }
-    
+            
             h4{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
                 font-weight: 400;
+                color: $Color-oscuro;
                 hr{
-                    @include titleHr(1em,50%,$Color-primario);  
+                    @include titleHr(1em,50%,$Color-claro);  
                 }
             }
         }

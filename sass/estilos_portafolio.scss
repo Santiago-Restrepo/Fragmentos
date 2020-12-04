@@ -29,7 +29,7 @@ Impresión (page-break, orphans, widows)
     margin-bottom: 3em;
     width: 100vw;
     height: 7em;
-    background-color: #060e10;
+    background-color: $Color-gris;
     input{
         padding-left: 4em;
         width: 80%;
@@ -250,7 +250,7 @@ Impresión (page-break, orphans, widows)
             margin: 0;
             padding: 0;
             border-bottom: none;
-            background-color: $Color-primario-oscuro;
+            background-color: $Color-oscuro;
             .hamburguer__menu{
                 display: none;
             }
@@ -260,7 +260,7 @@ Impresión (page-break, orphans, widows)
             .navbar{
                 position: relative;
                 left: 0;
-                background-color: $Color-primario-oscuro;
+                background-color: $Color-oscuro;
                 height: 100%;
                 ul{
                     display: grid;
@@ -278,7 +278,7 @@ Impresión (page-break, orphans, widows)
                         }
                     }
                     li:hover{
-                        background-color: #010a0c;
+                        background-color: $Color-primario;
                     }
                 }
             }
@@ -356,7 +356,8 @@ Impresión (page-break, orphans, widows)
     }
     .portfolio{
         &__projects{
-            grid-template-columns: repeat(auto-fill,33%);            justify-items: center;
+            grid-template-columns: repeat(auto-fill,33%);            
+            justify-items: center;
             width: 83em;
             &__project{
                 margin: 0;

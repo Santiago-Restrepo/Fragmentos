@@ -14,6 +14,10 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  background-color: #ecd6f8;
+}
+
 h1, h2, h3 {
   font-family: "Lato", sans-serif;
 }
@@ -79,7 +83,7 @@ Impresión (page-break, orphans, widows)
   width: 100vw;
   height: 13vh;
   padding: 2em 0;
-  background-color: #1E454E;
+  background-color: #12021a;
 }
 .header__box {
   display: flex;
@@ -87,7 +91,8 @@ Impresión (page-break, orphans, widows)
   width: 100%;
   padding-bottom: 2em;
   margin: 0.1em 2em;
-  border-bottom: 2px solid #c4c4c4;
+  border-bottom: 2px solid #bc6ff1;
+  background-color: #12021a;
 }
 .header__box__title {
   font-style: italic;
@@ -100,14 +105,15 @@ Impresión (page-break, orphans, widows)
 }
 .header__box .hamburguer__menu img {
   position: fixed;
-  top: 5;
-  left: 5;
+  top: 10;
+  left: 10;
   z-index: 4;
   width: 5em;
 }
 .header__box .navbar {
+  z-index: 1;
   position: fixed;
-  background-color: rgba(55, 41, 59, 0.9);
+  background-color: #52057b;
   top: 0;
   left: -100vw;
   bottom: 0;
@@ -154,7 +160,9 @@ Impresión (page-break, orphans, widows)
   width: 100vw;
   height: 87vh;
   color: white;
-  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
+  background-image: url("../imagenes/background.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 .hero__title {
   text-align: center;
@@ -184,7 +192,6 @@ Impresión (page-break, orphans, widows)
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  color: #37293B;
 }
 .whoIAm__container {
   display: flex;
@@ -201,11 +208,12 @@ Impresión (page-break, orphans, widows)
   flex-direction: column;
   font-weight: bolder;
   margin-bottom: 1em;
+  color: #41065f;
 }
 .whoIAm__container__info-title hr {
   margin-top: 0.4em;
   width: 35%;
-  border: 1px solid #1E454E;
+  border: 1px solid #bc6ff1;
 }
 .whoIAm__container__info-image {
   display: flex;
@@ -246,11 +254,12 @@ Impresión (page-break, orphans, widows)
   flex-direction: column;
   align-items: flex-end;
   font-weight: 400;
+  color: #12021a;
 }
 .whoIAm__container__description h4 hr {
   margin-top: 1em;
   width: 50%;
-  border: 1px solid #1E454E;
+  border: 1px solid #bc6ff1;
 }
 
 /*
@@ -273,13 +282,13 @@ Impresión (page-break, orphans, widows)
   height: -moz-fit-content;
   height: fit-content;
   width: 100vw;
-  background: linear-gradient(180deg, #37293b 50%, #000e3b 100%);
+  background-color: #12021a;
 }
 .focuseye .recentProjects {
   display: flex;
   flex-direction: column;
   width: 80vw;
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid #bc6ff1;
   margin-bottom: 3em;
 }
 .focuseye .recentProjects__title {
@@ -297,7 +306,7 @@ Impresión (page-break, orphans, widows)
 .focuseye .recentProjects__title hr {
   margin-top: 0.4em;
   width: 30%;
-  border: 1px solid #FF3644;
+  border: 1px solid #892cdc;
 }
 .focuseye .recentProjects__content {
   align-self: center;
@@ -333,18 +342,18 @@ Impresión (page-break, orphans, widows)
   flex-direction: column;
   align-items: center;
   margin-bottom: 1em;
-  color: #000E3B;
+  color: #12021a;
 }
 .focuseye .recentProjects__content .recentProject__info__title hr {
   margin-top: 0.2em;
   width: 80%;
-  border: 1px solid #c4c4c4;
+  border: 1px solid #bc6ff1;
 }
 .focuseye .recentProjects__content .recentProject__info__description {
-  margin-bottom: 2.2em;
+  margin-bottom: 1em;
   padding: 0 2em;
   font-weight: 400;
-  color: #37293B;
+  color: #12021a;
 }
 .focuseye .recentProjects__content .recentProject__button {
   display: flex;
@@ -356,7 +365,7 @@ Impresión (page-break, orphans, widows)
   font-style: normal;
   color: white;
   border-radius: 1em;
-  background-color: #03181D;
+  background-color: #08010c;
 }
 .focuseye .recentProjects__content .recentProject:nth-of-type(1) .recentProject__image {
   background-image: url(../imagenes/Rupatrupa.jpg);
@@ -381,7 +390,7 @@ Impresión (page-break, orphans, widows)
 .focuseye .recentPosts__title hr {
   margin-top: 0.4em;
   width: 30%;
-  border: 1px solid #FF3644;
+  border: 1px solid #892cdc;
 }
 .focuseye .recentPosts__content {
   width: 100%;
@@ -455,7 +464,7 @@ Impresión (page-break, orphans, widows)
   height: 30em;
   text-align: center;
   background-color: #FFDE5F;
-  color: #000E3B;
+  color: #12021a;
   box-shadow: 6px 6px #d3b53f;
 }
 .weeklyMessage__box-quote {
@@ -490,7 +499,7 @@ Impresión (page-break, orphans, widows)
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
+  background-color: #12021a;
 }
 .footer__content {
   box-sizing: border-box;
@@ -532,7 +541,7 @@ Impresión (page-break, orphans, widows)
   color: white;
   border: none;
   border-radius: 1em;
-  background-color: #03181D;
+  background-color: #41065f;
 }
 .footer__content .socialMedia {
   display: grid;
@@ -578,7 +587,6 @@ Impresión (page-break, orphans, widows)
     display: grid;
     justify-items: center;
     column-gap: 2%;
-    row-gap: 5%;
     grid-template-columns: repeat(auto-fill, 48%);
   }
   .focuseye .recentPosts__content .recentPost {
@@ -610,7 +618,6 @@ Impresión (page-break, orphans, widows)
   .focuseye .recentProjects__content {
     display: grid;
     column-gap: 2%;
-    row-gap: 5%;
     grid-template-columns: repeat(auto-fill, 48%);
   }
 
@@ -632,7 +639,7 @@ Impresión (page-break, orphans, widows)
     margin: 0;
     padding: 0;
     border-bottom: none;
-    background-color: #03181D;
+    background-color: #12021a;
   }
   .header__box .hamburguer__menu {
     display: none;
@@ -643,7 +650,7 @@ Impresión (page-break, orphans, widows)
   .header__box .navbar {
     position: relative;
     left: 0;
-    background-color: #03181D;
+    background-color: #12021a;
     height: 100%;
   }
   .header__box .navbar ul {
@@ -662,7 +669,7 @@ Impresión (page-break, orphans, widows)
     font-weight: 200;
   }
   .header__box .navbar ul li:hover {
-    background-color: #010a0c;
+    background-color: #08010c;
   }
   .header__box .active__page {
     border-bottom: 3px solid white;
