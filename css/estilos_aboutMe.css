@@ -209,6 +209,7 @@ Impresión (page-break, orphans, widows)
   color: white;
 }
 .footer__content__text h2 {
+  color: #bc6ff1;
   margin-bottom: 1em;
 }
 .footer__content__text h6 {
