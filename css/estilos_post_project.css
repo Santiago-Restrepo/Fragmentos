@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #ecd6f8;
+  background-color: #f3ecf7;
 }
 
 h1, h2, h3 {
@@ -393,7 +393,7 @@ Impresión (page-break, orphans, widows)
   width: -moz-fit-content;
   width: fit-content;
   height: 3em;
-  color: #ecd6f8;
+  color: #f3ecf7;
   background-color: #bc6ff1;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);

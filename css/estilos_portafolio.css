@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  background-color: #ecd6f8;
+  background-color: #f3ecf7;
 }
 
 h1, h2, h3 {
@@ -393,7 +393,7 @@ Impresión (page-break, orphans, widows)
   height: 4em;
   text-decoration: none;
   font-weight: 500;
-  color: #ecd6f8;
+  color: #f3ecf7;
   background-color: #12021a;
 }
 .portfolio__projects__project__content:hover .portfolio__projects__project__content__image {
