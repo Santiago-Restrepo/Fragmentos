@@ -7,11 +7,11 @@
     justify-content: center;
     width: 100vw;
     height: 87vh;
-    color: white;
-    background-image: url('../imagenes/background4.jpg');
-
+    color: $Color-blanco;
+    background-image: url('../imagenes/background5.png');
     background-size: cover;
     background-attachment: fixed;
+    background-position: 50% 20%;
     &__title{
         text-align: center;
         font-style: normal;
@@ -19,7 +19,7 @@
         margin-bottom: .2em;   
     }
     &__description{
-        color: white;
+        color: $Color-blanco;
         font-weight: 300;
         font-style: italic;
     }

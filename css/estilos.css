@@ -160,10 +160,11 @@ Impresión (page-break, orphans, widows)
   justify-content: center;
   width: 100vw;
   height: 87vh;
-  color: white;
-  background-image: url("../imagenes/background4.jpg");
+  color: #efebf1;
+  background-image: url("../imagenes/background5.png");
   background-size: cover;
   background-attachment: fixed;
+  background-position: 50% 20%;
 }
 .hero__title {
   text-align: center;
@@ -172,7 +173,7 @@ Impresión (page-break, orphans, widows)
   margin-bottom: 0.2em;
 }
 .hero__description {
-  color: white;
+  color: #efebf1;
   font-weight: 300;
   font-style: italic;
 }
