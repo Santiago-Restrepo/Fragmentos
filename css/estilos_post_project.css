@@ -406,9 +406,11 @@ Impresión (page-break, orphans, widows)
   width: 100%;
   height: 55%;
   border-radius: 1em 1em 0 0;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
+}
+.moreProjectsOrPosts__container .anotherProjectOrPost__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .moreProjectsOrPosts__container .anotherProjectOrPost__title {
   color: #12021a;

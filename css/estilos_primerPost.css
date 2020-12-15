@@ -4,10 +4,3 @@
     width: 50%;
   }
 }
-.anotherProjectOrPost:nth-of-type(1) .anotherProjectOrPost__image {
-  background-image: url(../imagenes/Rupatrupa.jpg);
-}
-
-.anotherProjectOrPost:nth-of-type(2) .anotherProjectOrPost__image {
-  background-image: url(../imagenes/PolimathosBLANCO.png);
-}

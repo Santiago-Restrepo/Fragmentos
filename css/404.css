@@ -68,7 +68,7 @@ h6 {
 body {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(0deg, #060e10 0%, #060e10 15%, #1e454e 100%);
+  background: #efebf1;
 }
 body main {
   display: flex;
@@ -78,13 +78,13 @@ body main {
   width: 100%;
   height: 100%;
   text-align: center;
-  color: white;
+  color: #08010c;
 }
 body main h2 {
   margin-bottom: 3em;
   font-style: italic;
   font-weight: 600;
-  color: #bc6ff1;
+  color: #12021a;
 }
 body main h1 {
   margin-bottom: 0.3em;
@@ -92,7 +92,7 @@ body main h1 {
 body main h6 {
   margin-bottom: 6em;
   font-weight: 400;
-  color: #bc6ff1;
+  color: #41065f;
 }
 body main a {
   display: flex;
@@ -103,8 +103,8 @@ body main a {
   text-decoration: none;
   font-size: 1.7em;
   font-weight: bold;
-  background-color: #FFDE5F;
-  color: #41065f;
+  background-color: #41065f;
+  color: #bc6ff1;
   border-radius: 1em;
 }
 
