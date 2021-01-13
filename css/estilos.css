@@ -369,6 +369,9 @@ Impresión (page-break, orphans, widows)
   border-radius: 1em;
   background-color: #08010c;
 }
+.focuseye .recentProjects__content .recentProject__button:hover {
+  opacity: 0.95;
+}
 .focuseye .recentProjects__content .recentProject:nth-of-type(1) .recentProject__image {
   background-image: url(../imagenes/Rupatrupa.jpg);
 }
@@ -412,6 +415,7 @@ Impresión (page-break, orphans, widows)
   text-decoration: none;
   background-color: white;
   box-shadow: 0px 6px 10px 0px #131315;
+  transition: 0.5s ease-out;
 }
 .focuseye .recentPosts__content .recentPost__image {
   width: 100%;
@@ -430,6 +434,9 @@ Impresión (page-break, orphans, widows)
   right: 15;
   bottom: 7.5;
   font-size: 0.7em;
+}
+.focuseye .recentPosts__content .recentPost:hover {
+  background-color: #FFDE5F;
 }
 .focuseye .recentPost:nth-of-type(1) .recentPost__image {
   background-image: url(../imagenes/question.jpg);
