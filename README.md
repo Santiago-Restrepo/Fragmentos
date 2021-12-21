@@ -1,6 +1,6 @@
 # Fragmentos
 
-* Fragmentos * is a personal project whose purpose is to convey ideas, thoughts and knowledge in the internet through posts and projects about me and my life.
+* *Fragmentos* is a personal project whose purpose is to convey ideas, thoughts and knowledge in the internet through posts and projects about me and my life.
 
 ### Installation 🔧
 
