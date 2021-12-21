@@ -4,7 +4,7 @@
 
 ### Installation 🔧
 
-#### No instalation requiered
+> #### No instalation requiered
 Just `git clone`
 
 ## Built with 🛠️
